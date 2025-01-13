@@ -21,9 +21,24 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <div class="goals-container">
+        <div class="goals-left">
+            <h1>Your Goals</h1>
+            <!-- List of goals will go here -->
+            <ul class="goals-list">
+                <li>Goal 1: Study for 1 hour daily</li>
+                <li>Goal 2: Exercise 3 times a week</li>
+                <li>Goal 3: Practice mindfulness every morning</li>
+            </ul>
+        </div>
+
+        <div class="goals-right">
+            <button class="add-goal-btn">Add a Goal</button>
+            <button class="redeem-rewards-btn">Redeem Rewards</button>
+        </div>
+    </div>
 </body>
 </html>

@@ -638,3 +638,64 @@ button:hover {
 .journal-actions button:hover {
     background-color: #45a049;
 }
+
+/* Goals Page Styles */
+.goals-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px; /* Increased space at the top */
+    gap: 10px;  /* Reduced space between left and right sections */
+    margin-top: 50px; /* Adjusted to control overall space from top */
+}
+
+.goals-left,
+.goals-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goals-left {
+    width: 60%;  /* Take 60% of the container */
+    text-align: center;  /* Center the text */
+    margin-top: 20px;  /* Adjusted to bring text down a bit */
+}
+
+.goals-right {
+    width: 35%;  /* Take 35% of the container */
+    text-align: center;  /* Center the buttons */
+}
+
+.goals-left h1 {
+    font-size: 28px;
+    margin-bottom: 5px;  /* Minimal space under title */
+}
+
+.goals-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.goals-list li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;  /* Reduced space between list items */
+}
+
+.goals-right button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;  /* Reduced space between buttons */
+    transition: background-color 0.3s ease;
+}
+
+.goals-right button:hover {
+    background-color: #45a049;
+}
