@@ -21,9 +21,20 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <div class="container">
+        <div class="exercise-box">
+            <h2>Exercise Plans</h2>
+            <p>Browse a variety of exercise plans designed to help you reach your fitness goals.</p>
+            <a href="#">Explore Plans</a>
+        </div>
+        <div class="exercise-box">
+            <h2>Workout Videos</h2>
+            <p>Watch workout videos to guide you through exercises and help you stay motivated.</p>
+            <a href="#">Watch Videos</a>
+        </div>
+    </div>
 </body>
 </html>
