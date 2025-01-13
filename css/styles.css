@@ -457,3 +457,90 @@ nav ul li a:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* Apply Counselling Form Styles */
+.apply-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.apply-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.apply-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apply-container .form-group {
+    margin-bottom: 20px;
+}
+
+.apply-container label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.apply-container input[type="date"],
+.apply-container input[type="tel"],
+.apply-container input[type="radio"],
+.apply-container input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.apply-container .radio-group,
+.apply-container .checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.apply-container input[type="radio"],
+.apply-container input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.apply-container .availability-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.apply-container .availability-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}

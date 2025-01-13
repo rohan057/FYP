@@ -21,9 +21,85 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <div class="apply-container">
+        <h1>Apply for Counselling/Workshops</h1>
+        <form action="submit_counselling.php" method="POST" class="apply-form">
+            <div class="form-group">
+                <label for="dob">Date of Birth <span>*</span></label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890">
+            </div>
+
+            <div class="form-group">
+                <label>Are you currently seeking external professional support? <span>*</span></label>
+                <div class="radio-group">
+                    <label for="yes">
+                        <input type="radio" id="yes" name="external_support" value="yes" required> Yes, I am currently seeing an external counsellor
+                    </label>
+                    <label for="no">
+                        <input type="radio" id="no" name="external_support" value="no"> No
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="contact_method">What are your preferred method(s) of contact?</label>
+                <div class="checkbox-group">
+                    <label for="face_to_face">
+                        <input type="checkbox" id="face_to_face" name="contact_method" value="face_to_face"> Face to Face
+                    </label>
+                    <label for="online_meeting">
+                        <input type="checkbox" id="online_meeting" name="contact_method" value="online_meeting"> Online Meeting
+                    </label>
+                    <label for="telephone">
+                        <input type="checkbox" id="telephone" name="contact_method" value="telephone"> Telephone
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="availability">When would you be available?</label>
+                <div class="availability-group">
+                    <label for="monday">Mondays:</label>
+                    <input type="checkbox" id="monday_am" name="availability[monday]" value="AM"> AM
+                    <input type="checkbox" id="monday_pm" name="availability[monday]" value="PM"> PM
+                    <input type="checkbox" id="monday_all_day" name="availability[monday]" value="All Day"> All Day
+                </div>
+                <div class="availability-group">
+                    <label for="tuesday">Tuesdays:</label>
+                    <input type="checkbox" id="tuesday_am" name="availability[tuesday]" value="AM"> AM
+                    <input type="checkbox" id="tuesday_pm" name="availability[tuesday]" value="PM"> PM
+                    <input type="checkbox" id="tuesday_all_day" name="availability[tuesday]" value="All Day"> All Day
+                </div>
+                <div class="availability-group">
+                    <label for="wednesday">Wednesdays:</label>
+                    <input type="checkbox" id="wednesday_am" name="availability[wednesday]" value="AM"> AM
+                    <input type="checkbox" id="wednesday_pm" name="availability[wednesday]" value="PM"> PM
+                    <input type="checkbox" id="wednesday_all_day" name="availability[wednesday]" value="All Day"> All Day
+                </div>
+                <div class="availability-group">
+                    <label for="thursday">Thursdays:</label>
+                    <input type="checkbox" id="thursday_am" name="availability[thursday]" value="AM"> AM
+                    <input type="checkbox" id="thursday_pm" name="availability[thursday]" value="PM"> PM
+                    <input type="checkbox" id="thursday_all_day" name="availability[thursday]" value="All Day"> All Day
+                </div>
+                <div class="availability-group">
+                    <label for="friday">Fridays:</label>
+                    <input type="checkbox" id="friday_am" name="availability[friday]" value="AM"> AM
+                    <input type="checkbox" id="friday_pm" name="availability[friday]" value="PM"> PM
+                    <input type="checkbox" id="friday_all_day" name="availability[friday]" value="All Day"> All Day
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
