@@ -21,9 +21,20 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <div class="container">
+        <div class="funding-box">
+            <h2>UK Residents</h2>
+            <p>Explore funding options specifically available for students residing in the UK.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="funding-box">
+            <h2>International Students</h2>
+            <p>Find financial support and funding opportunities for international students.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
 </body>
 </html>

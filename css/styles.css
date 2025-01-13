@@ -232,3 +232,59 @@ nav ul li a:hover {
         padding: 120px 20px 20px;
     }
 }
+
+/* Container for Funding Boxes */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 100px auto; /* Adds spacing below the fixed navbar */
+    max-width: 1200px;
+    gap: 20px; /* Space between boxes */
+    padding: 20px;
+}
+
+/* Individual Funding Boxes */
+.funding-box {
+    background-color: #f4f4f4;
+    text-align: center;
+    width: calc(50% - 20px); /* Two boxes per row */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.funding-box:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+.funding-box h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.funding-box p {
+    color: #666;
+    margin: 10px 0 20px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.funding-box a {
+    display: inline-block;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.funding-box a:hover {
+    background-color: #45a049;
+}
