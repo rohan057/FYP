@@ -17,7 +17,7 @@
             <li><a href="exercise.php">Exercise</a></li>
             <li><a href="nutrition.php">Nutrition</a></li>
             <li><a href="meditation-mindfulness.php">Meditation and Mindfulness</a></li>
-            <li><a href="counselling.php">Counselling</a></li>
+            <li><a href="counselling-workshops.php">Counselling</a></li>
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
