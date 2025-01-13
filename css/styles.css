@@ -601,3 +601,40 @@ button:hover {
 .login-container button:hover {
     background-color: #45a049;
 }
+
+/* Journal Page Styles */
+.journal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.journal-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.journal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.journal-actions button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.journal-actions button:hover {
+    background-color: #45a049;
+}

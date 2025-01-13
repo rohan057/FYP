@@ -21,9 +21,16 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <div class="journal-container">
+        <h1>Your Private Journal</h1>
+
+        <div class="journal-actions">
+            <button class="add-entry-btn">Add Entry</button>
+            <button class="view-past-entries-btn">View Past Entries</button>
+        </div>
+    </div>
 </body>
 </html>
