@@ -21,9 +21,32 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <div class="hero-image">
+        <img src="images/index-image.png" alt="Student Wellbeing" /> <!-- https://www.celcis.org/knowledge-bank/search-bank/blog/how-students-are-helping-shape-university-led-and-peer-support-students-care-experience -->
+    </div>
+
+    <div class="info-boxes">
+    <a href="counselling-workshops.php" class="info-box">
+        <img src="images/index-appointment.webp" alt="Book Appointment" class="info-box-img"> <!-- https://www.shutterstock.com/image-vector/book-your-appointment-on-calendar-2305316035 -->
+        Book Appointment
+    </a>
+    <a href="hotline.php" class="info-box">
+        <img src="images/index-hotline.jpg" alt="Hotline Numbers" class="info-box-img"> <!-- https://www.shutterstock.com/search/hotline-number -->
+        Hotline Numbers
+    </a>
+    <a href="faq.php" class="info-box">
+        <img src="images/index-faq.jpg" alt="Frequently Asked Questions" class="info-box-img"> <!-- https://depositphotos.com/vectors/faq.html -->
+        Frequently Asked Questions
+    </a>
+    <a href="events.php" class="info-box">
+        <img src="images/index-events.jpg" alt="Upcoming Events" class="info-box-img"> <!-- https://www.vectorstock.com/royalty-free-vectors/upcoming-events-vectors -->
+        Upcoming Events
+    </a>
+</div>
+
+
 </body>
 </html>
