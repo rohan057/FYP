@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anonymous Feedback</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Global styles for all pages -->
 </head>
 <body>
     <nav>
@@ -21,9 +21,23 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <div class="feedback-page">
+        <div class="textbox-container">
+            <p class="info-text">
+                Welcome to the Anonymous Feedback Form. Your responses will help us improve the resources and support offered to students. All feedback is anonymous, and your input will be used to enhance the services we provide. Please feel free to share any thoughts, suggestions, or concerns you may have.
+            </p>
+        </div>
+
+        <div class="form-container">
+            <form action="submit-feedback.php" method="POST">
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="5" required></textarea>
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
