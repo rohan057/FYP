@@ -699,3 +699,45 @@ button:hover {
 .goals-right button:hover {
     background-color: #45a049;
 }
+
+/* Adjusted styles for the hotline header */
+.hotline-header {
+    font-size: 32px;
+    margin-top: 10px; /* Reduced top margin to bring it higher */
+    margin-bottom: 20px; /* Keep bottom margin for spacing */
+}
+
+/* Styles for the hotline table */
+.hotline-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.hotline-table th,
+.hotline-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.hotline-table th {
+    background-color: #f4f4f4;
+    font-size: 20px;
+    color: #333;
+}
+
+.hotline-table td {
+    font-size: 18px;
+    color: #555;
+}
+
+.hotline-table a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.hotline-table a:hover {
+    text-decoration: underline;
+}
