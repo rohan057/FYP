@@ -21,9 +21,25 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <div class="container">
+        <div class="nutrition-box">
+            <h2>Meat Dishes</h2>
+            <p>Explore a variety of delicious and nutritious meat-based dishes.</p>
+            <a href="#">Explore Recipes</a>
+        </div>
+        <div class="nutrition-box">
+            <h2>Vegetarian Dishes</h2>
+            <p>Find healthy and tasty vegetarian meal options for all dietary needs.</p>
+            <a href="#">Explore Recipes</a>
+        </div>
+        <div class="nutrition-box">
+            <h2>Vegan Dishes</h2>
+            <p>Browse a collection of flavorful vegan dishes that are both nutritious and satisfying.</p>
+            <a href="#">Explore Recipes</a>
+        </div>
+    </div>
 </body>
 </html>
