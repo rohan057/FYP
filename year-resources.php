@@ -21,9 +21,25 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <div class="container">
+        <div class="year-box">
+            <h2>First Year Students</h2>
+            <p>Resources to help you transition into university life and succeed in your first year.</p>
+            <a href="#">Explore Resources</a>
+        </div>
+        <div class="year-box">
+            <h2>Second Year Students</h2>
+            <p>Tools and support for academic and personal growth during your second year.</p>
+            <a href="#">Explore Resources</a>
+        </div>
+        <div class="year-box">
+            <h2>Third Year Students</h2>
+            <p>Guidance and resources for final year students preparing for graduation and beyond.</p>
+            <a href="#">Explore Resources</a>
+        </div>
+    </div>
 </body>
 </html>

@@ -249,7 +249,8 @@ nav ul li a:hover {
 .funding-box {
     background-color: #f4f4f4;
     text-align: center;
-    width: calc(50% - 20px); /* Two boxes per row */
+    flex: 1 1 calc(33.33% - 20px); /* Three boxes per row */
+    max-width: calc(33.33% - 20px); /* Ensure width adapts to the container */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
@@ -287,4 +288,49 @@ nav ul li a:hover {
 
 .funding-box a:hover {
     background-color: #45a049;
+}
+
+/* Year Boxes */
+.year-box {
+    flex: 1; /* Each box takes up equal space */
+    max-width: 30%; /* Limit the maximum width of each box */
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.year-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.year-box p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.year-box a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.year-box a:hover {
+    background-color: #45a049;
+}
+
+.year-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
