@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    <title>Event Calendar</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,9 +20,16 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <header class="calendar-header">
+        <h1>Event Calendar</h1>
+    </header>
+
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=ca48b22c73b05ce41f1ee524e29adbd4e980bfcee247ea20e52a8c7aaf14171f%40group.calendar.google.com&ctz=Europe%2FLondon"
+            style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
 </body>
 </html>
