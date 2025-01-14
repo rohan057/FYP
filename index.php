@@ -24,12 +24,11 @@ session_start();
             
             <?php if (isset($_SESSION['user_id'])): ?>
                 <li><a href="logout.php">Logout</a></li>
+                <li><a href="journal.php">Journal</a></li>
+                <li><a href="goals.php">Goals</a></li>
             <?php else: ?>
                 <li><a href="login.php">Login</a></li>
             <?php endif; ?>
-            
-            <li><a href="journal.php">Journal</a></li>
-            <li><a href="goals.php">Goals</a></li>
         </ul>
     </nav>
 
