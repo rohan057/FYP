@@ -35,8 +35,8 @@
         </div>
 
         <div class="goals-right">
-            <button class="add-goal-btn">Add a Goal</button>
-            <button class="redeem-rewards-btn">Redeem Rewards</button>
+            <a href="goals-add.php"><button class="add-goal-btn">Add a Goal</button></a>
+            <a href="goals-redeem.php"><button class="redeem-rewards-btn">Redeem Rewards</button></a>
         </div>
     </div>
 </body>

@@ -27,8 +27,8 @@
         <h1>Your Private Journal</h1>
 
         <div class="journal-actions">
-            <button class="add-entry-btn">Add Entry</button>
-            <button class="view-past-entries-btn">View Past Entries</button>
+            <a href="journal-add.php"><button class="add-entry-btn">Add Entry</button></a>
+            <a href="journal-entries.php"><button class="view-past-entries-btn">View Past Entries</button></a>
         </div>
     </div>
 </body>
