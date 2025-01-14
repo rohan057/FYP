@@ -24,6 +24,7 @@
     </nav>
 
     <div class="feedback-page">
+    <h1>Request Resources</h1>
         <div class="textbox-container">
             <p class="info-text">
                 Welcome to the Anonymous Feedback Form. Your responses will help us improve the resources and support offered to students. All feedback is anonymous, and your input will be used to enhance the services we provide. Please feel free to share any thoughts, suggestions, or concerns you may have.

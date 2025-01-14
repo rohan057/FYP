@@ -23,7 +23,7 @@
         </ul>
     </nav>
 
-    <h1 class="faq-header">Frequently Answered Questions</h1>
+    <h1 class="faq-header">Frequently Asked Questions</h1>
 
     <div class="faq-container">
         <div class="faq-item">

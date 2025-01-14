@@ -24,10 +24,11 @@
     </nav>
 
     <div class="request-resources-page">
+    <h1>Request Resources</h1>
         <div class="container">
             <div class="form-container">
                 <form action="submit_resources.php" method="POST">
-                    <label for="resource-request">Request Resources:</label>
+                    <label for="resource-request">Fill In The Below Fields:</label>
                     <input type="text" id="resource-request" name="resource-request" placeholder="Enter your request">
                     <input type="submit" value="Submit">
                 </form>
