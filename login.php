@@ -1,3 +1,45 @@
+<?php
+session_start();
+
+$host = 'localhost';
+$dbname = 'fyp';
+$username = 'root';
+$password = '';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if (!empty($email) && !empty($password)) {
+        $query = "SELECT * FROM users WHERE email = :email LIMIT 1";
+        $stmt = $pdo->prepare($query);
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($user && $password == $user['password']) {
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['email'] = $user['email'];
+
+            header('Location: index.php');
+            exit();
+        } else {
+            $error_message = "Invalid email or password.";
+        }
+    } else {
+        $error_message = "Please fill in both fields.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +59,13 @@
             <li><a href="exercise.php">Exercise</a></li>
             <li><a href="nutrition.php">Nutrition</a></li>
             <li><a href="meditation-mindfulness.php">Meditation and Mindfulness</a></li>
-            <li><a href="login.php">Login</a></li>
+            
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <li><a href="logout.php">Logout</a></li>
+            <?php else: ?>
+                <li><a href="login.php">Login</a></li>
+            <?php endif; ?>
+            
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
         </ul>
@@ -25,10 +73,15 @@
 
     <div class="login-container">
         <h1>Login</h1>
-        <form action="process-login.php" method="POST">
+        
+        <?php if (isset($error_message)): ?>
+            <p class="error"><?php echo $error_message; ?></p>
+        <?php endif; ?>
+        
+        <form action="login.php" method="POST">
             <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required placeholder="Enter your username">
+                <label for="email">Username:</label>
+                <input type="text" id="email" name="email" required placeholder="Enter your email">
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
