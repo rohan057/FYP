@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +21,13 @@
             <li><a href="exercise.php">Exercise</a></li>
             <li><a href="nutrition.php">Nutrition</a></li>
             <li><a href="meditation-mindfulness.php">Meditation and Mindfulness</a></li>
-            <li><a href="login.php">Login</a></li>
+            
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <li><a href="logout.php">Logout</a></li>
+            <?php else: ?>
+                <li><a href="login.php">Login</a></li>
+            <?php endif; ?>
+            
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
         </ul>
