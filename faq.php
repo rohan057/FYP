@@ -20,9 +20,32 @@
             <li><a href="login.php">Login</a></li>
             <li><a href="journal.php">Journal</a></li>
             <li><a href="goals.php">Goals</a></li>
-                </ul>
-            </li>
         </ul>
     </nav>
+
+    <h1 class="faq-header">Frequently Answered Questions</h1>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-checkbox">
+            <label for="faq1" class="faq-question">What is the purpose of this platform?</label>
+            <div class="faq-answer">This platform is designed to provide resources and support for students to improve their wellbeing, balance education, and enhance mental health.</div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-checkbox">
+            <label for="faq2" class="faq-question">How can I request resources?</label>
+            <div class="faq-answer">You can request resources by navigating to the "Request Resources" page and filling out the provided questionnaire.</div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-checkbox">
+            <label for="faq3" class="faq-question">Who can access the anonymous feedback section?</label>
+            <div class="faq-answer">The anonymous feedback section is open to all students to provide their feedback while keeping their identity private.</div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq4" class="faq-checkbox">
+            <label for="faq4" class="faq-question">Where can I find emergency hotline numbers?</label>
+            <div class="faq-answer">You can find a list of emergency hotline numbers under the "Hotline Numbers" page for quick access.</div>
+        </div>
+    </div>
 </body>
 </html>
