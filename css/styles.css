@@ -334,6 +334,12 @@ nav ul li a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.exercise-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .exercise-box h2 {
@@ -355,6 +361,7 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .exercise-box a:hover {
