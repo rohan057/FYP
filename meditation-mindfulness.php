@@ -27,12 +27,12 @@
         <div class="mindfulness-box">
             <h2>Meditation Techniques</h2>
             <p>Learn various meditation techniques to improve focus, reduce stress, and enhance well-being.</p>
-            <a href="#">Explore Techniques</a>
+            <a href="meditation-techniques.php">Explore Techniques</a>
         </div>
         <div class="mindfulness-box">
             <h2>Mindfulness Exercises</h2>
             <p>Explore mindfulness exercises designed to help you stay present, reduce anxiety, and promote calmness.</p>
-            <a href="#">Explore Exercises</a>
+            <a href="mindfulness-exercises.php">Explore Exercises</a>
         </div>
     </div>
 </body>

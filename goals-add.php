@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Resources</title>
+    <title>Event Calendar</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,23 +22,5 @@
             <li><a href="goals.php">Goals</a></li>
         </ul>
     </nav>
-
-    <div class="container">
-        <div class="year-box">
-            <h2>First Year Students</h2>
-            <p>Resources to help you transition into university life and succeed in your first year.</p>
-            <a href="first-year.php">Explore Resources</a>
-        </div>
-        <div class="year-box">
-            <h2>Second Year Students</h2>
-            <p>Tools and support for academic and personal growth during your second year.</p>
-            <a href="second-year.php">Explore Resources</a>
-        </div>
-        <div class="year-box">
-            <h2>Third Year Students</h2>
-            <p>Guidance and resources for final year students preparing for graduation and beyond.</p>
-            <a href="third-year.php">Explore Resources</a>
-        </div>
-    </div>
 </body>
 </html>

@@ -27,12 +27,12 @@
         <div class="exercise-box">
             <h2>Exercise Plans</h2>
             <p>Browse a variety of exercise plans designed to help you reach your fitness goals.</p>
-            <a href="#">Explore Plans</a>
+            <a href="exercise-plans.php">Explore Plans</a>
         </div>
         <div class="exercise-box">
             <h2>Workout Videos</h2>
             <p>Watch workout videos to guide you through exercises and help you stay motivated.</p>
-            <a href="#">Watch Videos</a>
+            <a href="exercise-videos.php">Watch Videos</a>
         </div>
     </div>
 </body>

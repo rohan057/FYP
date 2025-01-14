@@ -27,17 +27,17 @@
         <div class="nutrition-box">
             <h2>Meat Dishes</h2>
             <p>Explore a variety of delicious and nutritious meat-based dishes.</p>
-            <a href="#">Explore Recipes</a>
+            <a href="nutrition-meat.php">Explore Recipes</a>
         </div>
         <div class="nutrition-box">
             <h2>Vegetarian Dishes</h2>
             <p>Find healthy and tasty vegetarian meal options for all dietary needs.</p>
-            <a href="#">Explore Recipes</a>
+            <a href="nutrition-veg.php">Explore Recipes</a>
         </div>
         <div class="nutrition-box">
             <h2>Vegan Dishes</h2>
             <p>Browse a collection of flavorful vegan dishes that are both nutritious and satisfying.</p>
-            <a href="#">Explore Recipes</a>
+            <a href="nutrition-vegan.php">Explore Recipes</a>
         </div>
     </div>
 </body>

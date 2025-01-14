@@ -27,12 +27,12 @@
         <div class="funding-box">
             <h2>UK Residents</h2>
             <p>Explore funding options specifically available for students residing in the UK.</p>
-            <a href="#">Learn More</a>
+            <a href="funding-uk.php">Learn More</a>
         </div>
         <div class="funding-box">
             <h2>International Students</h2>
             <p>Find financial support and funding opportunities for international students.</p>
-            <a href="#">Learn More</a>
+            <a href="funding-international.php">Learn More</a>
         </div>
     </div>
 </body>
