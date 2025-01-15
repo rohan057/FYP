@@ -33,20 +33,83 @@ session_start();
     </nav>
 
     <div class="request-resources-page">
-    <h1>Request Resources</h1>
+        <h1>Request Resources</h1>
         <div class="container">
             <div class="form-container">
-                <form action="questionnaire.php" method="POST">
-                    <label for="resource-request">Fill In The Below Fields:</label>
-                    <input type="text" id="resource-request" name="resource-request" placeholder="Enter your request">
+                <form action="submit_questionnaire.php" method="POST">
+                    <label for="contact-info">Your Contact Information:</label>
+                    <input type="text" id="contact-info" name="contact_info" placeholder="Enter your email or phone number" required>
+
+                    <label for="primary-goal">What is your primary goal for seeking support?</label>
+                    <select id="primary-goal" name="primary_goal" required>
+                        <option value="">Select an option</option>
+                        <option value="Improve academic performance">Improve academic performance</option>
+                        <option value="Reduce stress and anxiety">Reduce stress and anxiety</option>
+                        <option value="Build healthy habits">Build healthy habits</option>
+                        <option value="Improve time management">Improve time management</option>
+                        <option value="Connect with peers">Connect with peers</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="current-resources">Have you used any resources before?</label>
+                    <select id="current-resources" name="current_resources" required>
+                        <option value="">Select an option</option>
+                        <option value="University provided resources">University provided resources</option>
+                        <option value="External resources">External resources</option>
+                        <option value="First time seeking resources">First time seeking resources</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="communication-method">Preferred communication method:</label>
+                    <select id="communication-method" name="communication_method" required>
+                        <option value="">Select an option</option>
+                        <option value="Email">Email</option>
+                        <option value="Phone">Phone</option>
+                    </select>
+
+                    <label for="availability">When are you most available to be contacted?</label>
+                    <select id="availability" name="availability" required>
+                        <option value="">Select an option</option>
+                        <option value="Weekdays (morning)">Weekdays (morning)</option>
+                        <option value="Weekdays (afternoon)">Weekdays (afternoon)</option>
+                        <option value="Weekdays (evening)">Weekdays (evening)</option>
+                        <option value="Weekends">Weekends</option>
+                        <option value="Flexible">Flexible</option>
+                    </select>
+
+                    <label for="specific-issues">What areas do you need support with?</label>
+                    <select id="specific-issues" name="specific_issues[]" required>
+                        <option value="">Select an option</option>
+                        <option value="Financial aid and scholarships">Financial aid and scholarships</option>
+                        <option value="Finding study groups or mentors">Finding study groups or mentors</option>
+                        <option value="Access to healthy meals or exercise programs">Access to healthy meals or exercise programs</option>
+                        <option value="Mental health support">Mental health support</option>
+                        <option value="Time management or productivity tools">Time management or productivity tools</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="urgency">How urgently do you need help?</label>
+                    <select id="urgency" name="urgency" required>
+                        <option value="">Select an option</option>
+                        <option value="Immediately">Immediately</option>
+                        <option value="Within the next few days">Within the next few days</option>
+                        <option value="Within the next month">Within the next month</option>
+                        <option value="Not urgent, just exploring options">Not urgent, just exploring options</option>
+                    </select>
+
+                    <label for="contact-info">Additional Information:</label>
+                    <input type="text" id="additional-info" name="additional_info" placeholder="Enter any further details">
+
                     <input type="submit" value="Submit">
                 </form>
             </div>
+
             <div class="textbox-container">
                 <div class="info-text">
                     <p>
-                        Write info here about what the form is for and what happens and where it gets sent to and the process
-                        to get you the necessary resources.
+                        Fill out this form to let us know about your needs, challenges, and preferences. 
+                        Based on your responses, we will recommend tailored resources to support you. 
+                        Your information will remain confidential, and our team will follow up promptly.
                     </p>
                 </div>
             </div>

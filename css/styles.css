@@ -65,11 +65,16 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.request-resources-page h1 {
+    margin-bottom: -70px; /* Adjust the gap below the header */
+}
+
 .request-resources-page .container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 900px;
+    gap: 20px;
 }
 
 .request-resources-page .form-container,
@@ -81,14 +86,18 @@ nav ul li a:hover {
 .request-resources-page form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .request-resources-page form label,
-.request-resources-page form input {
+.request-resources-page form input,
+.request-resources-page form select {
     margin-bottom: 10px;
+    width: 100%;
 }
 
-.request-resources-page form input[type="text"] {
+.request-resources-page form input[type="text"],
+.request-resources-page form select {
     padding: 12px;
     font-size: 18px;
     border-radius: 5px;
@@ -104,6 +113,7 @@ nav ul li a:hover {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .request-resources-page form input[type="submit"]:hover {
@@ -117,6 +127,8 @@ nav ul li a:hover {
     border: 1px solid #ddd;
     font-size: 18px;
     color: #333;
+    width: 100%;
+    max-width: 400px;
 }
 
 .feedback-page {
