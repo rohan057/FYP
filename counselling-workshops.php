@@ -34,7 +34,7 @@ session_start();
 
     <div class="apply-container">
         <h1>Apply for Counselling/Workshops</h1>
-        <form action="submit_counselling.php" method="POST" class="apply-form">
+        <form action="counselling-workshops.php" method="POST" class="apply-form">
             <div class="form-group">
                 <label for="dob">Date of Birth <span>*</span></label>
                 <input type="date" id="dob" name="dob" required>

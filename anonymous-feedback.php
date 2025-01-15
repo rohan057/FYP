@@ -41,7 +41,7 @@ session_start();
         </div>
 
         <div class="form-container">
-            <form action="submit-feedback.php" method="POST">
+            <form action="anonymous-feedback.php" method="POST">
                 <label for="feedback">Your Feedback:</label>
                 <textarea id="feedback" name="feedback" rows="5" required></textarea>
                 <input type="submit" value="Submit Feedback">
