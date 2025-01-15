@@ -37,6 +37,9 @@ session_start();
         <div class="container">
             <div class="form-container">
                 <form action="submit_questionnaire.php" method="POST">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
                     <label for="contact-info">Your Contact Information:</label>
                     <input type="text" id="contact-info" name="contact_info" placeholder="Enter your email or phone number" required>
 
