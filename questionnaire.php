@@ -9,6 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request Resources</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <nav>
@@ -36,7 +37,7 @@ session_start();
         <h1>Request Resources</h1>
         <div class="container">
             <div class="form-container">
-                <form action="submit_questionnaire.php" method="POST">
+                <form id="resources-form">
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -100,7 +101,7 @@ session_start();
                         <option value="Not urgent, just exploring options">Not urgent, just exploring options</option>
                     </select>
 
-                    <label for="contact-info">Additional Information:</label>
+                    <label for="additional-info">Additional Information:</label>
                     <input type="text" id="additional-info" name="additional_info" placeholder="Enter any further details">
 
                     <input type="submit" value="Submit">
@@ -118,5 +119,27 @@ session_start();
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("-a7UR2xJyP_IEy_ok");
+        })();
+
+        document.getElementById("resources-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+
+            emailjs.sendForm("service_zr8tb7a", "template_1xmhyx8", document.getElementById("resources-form"))
+                .then(function(response) {
+                    console.log("Success:", response);
+                    alert("Your request has been sent!");
+                })
+                .catch(function(error) {
+                    console.error("Error:", error);
+                    alert("There was an error sending your request. Please try again.");
+                });
+        });
+    </script>
 </body>
 </html>
