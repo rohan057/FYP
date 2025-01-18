@@ -9,6 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anonymous Feedback</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <nav>
@@ -33,7 +34,7 @@ session_start();
     </nav>
 
     <div class="feedback-page">
-    <h1>Request Resources</h1>
+    <h1>Anonymous Feedback</h1>
         <div class="textbox-container">
             <p class="info-text">
                 Welcome to the Anonymous Feedback Form. Your responses will help us improve the resources and support offered to students. All feedback is anonymous, and your input will be used to enhance the services we provide. Please feel free to share any thoughts, suggestions, or concerns you may have.
@@ -41,12 +42,34 @@ session_start();
         </div>
 
         <div class="form-container">
-            <form action="anonymous-feedback.php" method="POST">
+            <form id="feedback-form">
                 <label for="feedback">Your Feedback:</label>
                 <textarea id="feedback" name="feedback" rows="5" required></textarea>
                 <input type="submit" value="Submit Feedback">
             </form>
         </div>
     </div>
+
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("-a7UR2xJyP_IEy_ok");
+        })();
+
+        document.getElementById("feedback-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+
+            emailjs.sendForm("service_zr8tb7a", "template_0h2gdjs", document.getElementById("feedback-form"))
+                .then(function(response) {
+                    console.log("Success:", response);
+                    alert("Your feedback has been sent!");
+                })
+                .catch(function(error) {
+                    console.error("Error:", error);
+                    alert("There was an error sending your feedback. Please try again.");
+                });
+        });
+    </script>
 </body>
 </html>
