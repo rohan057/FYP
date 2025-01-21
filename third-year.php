@@ -31,5 +31,37 @@ session_start();
             <?php endif; ?>
         </ul>
     </nav>
+
+    <div class="resources-container">
+        <h2 class="tips-title">Tips</h2>
+        <div class="tips-grid">
+            <div class="tips-card">
+                <img src="images/thirdyear-tip1.jpg" alt="Tip 1">
+                <h3>Assessment Centre Tips</h3>
+                <p>Learn ways to best prepare for assessment centres as you apply for graduate jobs.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C5DxhL-IKtX/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C5DxhL-IKtX/?img_index=1 -->
+            </div>
+            <div class="tips-card">
+                <img src="images/thirdyear-tip2.jpg" alt="Tip 2">
+                <h3>Surviving Exam Season</h3>
+                <p>Check out the best tips for surviving exam season as you look to achieve a top degree.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C0wI_CMIMd2/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C0wI_CMIMd2/?img_index=1 -->
+            </div>
+        </div>
+
+        <h2 class="section-title">Articles</h2>
+        <div class="articles-grid">
+            <div class="article-card">
+                <h3>How to Stay Motivated</h3>
+                <p>Read this article to find ways to stay motivated throughout the semester.</p>
+                <a href="#" target="_blank">Read Here</a>
+            </div>
+            <div class="article-card">
+                <h3>Healthy Eating for Students</h3>
+                <p>Tips on maintaining a healthy diet while managing a busy schedule.</p>
+                <a href="#" target="_blank">Read Here</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
