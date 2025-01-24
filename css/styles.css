@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    background-color: #333;
+    background-color: #940090;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #575757;
+    background-color: #160032;
 }
 
 .hero-image {
@@ -106,7 +106,7 @@ nav ul li a:hover {
 
 .request-resources-page form input[type="submit"] {
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     border: none;
     border-radius: 5px;
@@ -117,7 +117,7 @@ nav ul li a:hover {
 }
 
 .request-resources-page form input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .request-resources-page .info-text {
@@ -168,7 +168,7 @@ nav ul li a:hover {
 
 .feedback-page form input[type="submit"] {
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     border: none;
     border-radius: 5px;
@@ -178,7 +178,7 @@ nav ul li a:hover {
 }
 
 .feedback-page form input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .feedback-page .info-text {
@@ -282,7 +282,7 @@ nav ul li a:hover {
 .funding-box a {
     display: inline-block;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #940090;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -291,7 +291,7 @@ nav ul li a:hover {
 }
 
 .funding-box a:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .year-box {
@@ -321,7 +321,7 @@ nav ul li a:hover {
 .year-box a {
     display: inline-block;
     text-decoration: none;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -330,7 +330,7 @@ nav ul li a:hover {
 }
 
 .year-box a:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .year-box:hover {
@@ -368,7 +368,7 @@ nav ul li a:hover {
 .exercise-box a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -377,7 +377,7 @@ nav ul li a:hover {
 }
 
 .exercise-box a:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .nutrition-box {
@@ -407,7 +407,7 @@ nav ul li a:hover {
 .nutrition-box a {
     display: inline-block;
     text-decoration: none;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -416,7 +416,7 @@ nav ul li a:hover {
 }
 
 .nutrition-box a:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .nutrition-box:hover {
@@ -451,7 +451,7 @@ nav ul li a:hover {
 .mindfulness-box a {
     display: inline-block;
     text-decoration: none;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -460,7 +460,7 @@ nav ul li a:hover {
 }
 
 .mindfulness-box a:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .mindfulness-box:hover {
@@ -540,7 +540,7 @@ nav ul li a:hover {
 
 button {
     padding: 12px 20px;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     font-size: 18px;
     border: none;
@@ -551,7 +551,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .login-container {
@@ -596,7 +596,7 @@ button:hover {
 
 .login-container button {
     padding: 12px 20px;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     font-size: 18px;
     border: none;
@@ -607,7 +607,7 @@ button:hover {
 }
 
 .login-container button:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .journal-container {
@@ -634,7 +634,7 @@ button:hover {
 .journal-actions button {
     padding: 12px 20px;
     font-size: 18px;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     border: none;
     border-radius: 5px;
@@ -643,7 +643,7 @@ button:hover {
 }
 
 .journal-actions button:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .goals-container {
@@ -693,7 +693,7 @@ button:hover {
 .goals-right button {
     padding: 12px 20px;
     font-size: 18px;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     border: none;
     border-radius: 5px;
@@ -703,7 +703,7 @@ button:hover {
 }
 
 .goals-right button:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .hotline-header {
@@ -727,9 +727,9 @@ button:hover {
 }
 
 .hotline-table th {
-    background-color: #f4f4f4;
+    background-color: #940090;
     font-size: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .hotline-table td {
@@ -895,7 +895,7 @@ button:hover {
 .tips-card a, .article-card a {
     display: inline-block;
     text-decoration: none;
-    background-color: #4CAF50;
+    background-color: #940090;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -904,7 +904,7 @@ button:hover {
 }
 
 .tips-card a:hover, .article-card a:hover {
-    background-color: #45a049;
+    background-color: #160032;
 }
 
 .tips-card:hover, .article-card:hover {
