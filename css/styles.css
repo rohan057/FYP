@@ -768,15 +768,15 @@ button:hover {
 .faq-question {
     display: block;
     padding: 15px;
-    background-color: #f4f4f4;
+    background-color: #940090;
     cursor: pointer;
     font-weight: bold;
-    color: #333;
+    color: #fff;
     transition: background-color 0.3s;
 }
 
 .faq-question:hover {
-    background-color: #e9e9e9;
+    background-color: #160032;
 }
 
 .faq-answer {
