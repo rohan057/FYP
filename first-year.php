@@ -70,14 +70,34 @@ session_start();
         <h2 class="section-title">Articles</h2>
         <div class="articles-grid">
             <div class="article-card">
-                <h3>How to Stay Motivated</h3>
-                <p>Read this article to find ways to stay motivated throughout the semester.</p>
-                <a href="#" target="_blank">Read Here</a>
+                <h3>What to Expect In Your First Year of Univeristy</h3>
+                <p>Read this article to best prepare yourself as you start university life.</p>
+                <a href="https://www.thecompleteuniversityguide.co.uk/student-advice/after-you-start/what-to-expect-in-your-first-year-of-university" target="_blank">Read Here</a> <!-- https://www.thecompleteuniversityguide.co.uk/student-advice/after-you-start/what-to-expect-in-your-first-year-of-university -->
             </div>
             <div class="article-card">
                 <h3>Healthy Eating for Students</h3>
-                <p>Tips on maintaining a healthy diet while managing a busy schedule.</p>
-                <a href="#" target="_blank">Read Here</a>
+                <p>Tips on maintaining a healthy diet while at university.</p>
+                <a href="https://www.nutrition.org.uk/nutrition-for/students/" target="_blank">Read Here</a> <!-- https://www.nutrition.org.uk/nutrition-for/students/ -->
+            </div>
+            <div class="article-card">
+                <h3>Improve Your Mental Wellbeing</h3>
+                <p>Check out ways you can spend 20 minutes in nature to improve your mental health.</p>
+                <a href="https://www.wwf.org.uk/prescription-for-nature?utm_source=Google-Generic&utm_medium=PaidSearch-Generic&pc=AWS014003&gad_source=1&gclid=EAIaIQobChMIp9CBjteOiwMVHJJQBh0epjXFEAMYAiAAEgJ1DPD_BwE&gclsrc=aw.ds" target="_blank">Read Here</a> <!-- https://www.wwf.org.uk/prescription-for-nature?utm_source=Google-Generic&utm_medium=PaidSearch-Generic&pc=AWS014003&gad_source=1&gclid=EAIaIQobChMIp9CBjteOiwMVHJJQBh0epjXFEAMYAiAAEgJ1DPD_BwE&gclsrc=aw.ds -->
+            </div>
+            <div class="article-card">
+                <h3>How To Reference</h3>
+                <p>As you start university you will be required to reference in your assignments, make sure you don't get caught out.</p>
+                <a href="https://slainte.blog/2019/09/07/help-with-harvard-referencing-for-university-students/" target="_blank">Read Here</a> <!-- https://slainte.blog/2019/09/07/help-with-harvard-referencing-for-university-students/ -->
+            </div>
+            <div class="article-card">
+                <h3>Revision Techniques</h3>
+                <p>Find out which technique suits you best.</p>
+                <a href="https://www.ucas.com/connect/blogs/revision-techniques" target="_blank">Read Here</a> <!-- https://www.ucas.com/connect/blogs/revision-techniques -->
+            </div>
+            <div class="article-card">
+                <h3>Managing Finances</h3>
+                <p>Learn how to manage your finances properly.</p>
+                <a href="https://www.ucas.com/money-and-student-life/money/budgeting" target="_blank">Read Here</a> <!-- https://www.ucas.com/money-and-student-life/money/budgeting -->
             </div>
         </div>
     </div>

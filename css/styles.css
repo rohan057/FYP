@@ -834,15 +834,35 @@ button:hover {
     color: #333;
 }
 
-.tips-grid, .articles-grid {
+.tips-grid {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.tips-card, .article-card {
+.articles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.tips-card {
     flex: 1;
+    max-width: 30%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card {
+    flex: 0 1 calc(33.333% - 20px);
+    box-sizing: border-box;
     max-width: 30%;
     background-color: #f4f4f4;
     border: 1px solid #ddd;
