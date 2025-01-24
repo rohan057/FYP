@@ -47,6 +47,24 @@ session_start();
                 <p>Discover the essentials you need to know as you start university.</p>
                 <a href="https://www.instagram.com/p/C3P5x-hI5kw/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/p/C3P5x-hI5kw/?img_index=1 -->
             </div>
+            <div class="tips-card">
+                <img src="images/firstyear-tip3.jpg" alt="Tip 3">
+                <h3>Stress Management</h3>
+                <p>Check out methods on dealing with stress.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C3nfCFOIbFu/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C3nfCFOIbFu/?img_index=1 -->
+            </div>
+            <div class="tips-card">
+                <img src="images/firstyear-tip4.jpg" alt="Tip 4">
+                <h3>Revision Tips</h3>
+                <p>As you prepare for your first university exams find out how best to deal with them.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C3YAeQ8oLos/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C3YAeQ8oLos/?img_index=1 -->
+            </div>
+            <div class="tips-card">
+                <img src="images/firstyear-tip5.jpg" alt="Tip 5">
+                <h3>Starting Your CV</h3>
+                <p>As you begin university here are some tips on how to start a CV.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C3Czb4Po8wb/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C3Czb4Po8wb/?img_index=1 -->
+            </div>
         </div>
 
         <h2 class="section-title">Articles</h2>

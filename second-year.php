@@ -38,7 +38,7 @@ session_start();
             <div class="tips-card">
                 <img src="images/secondyear-tip1.jpg" alt="Tip 1">
                 <h3>CV Tips</h3>
-                <p>Look for a placement in your second year. Check out these tips on making your CV stand out.</p>
+                <p>Looking for a placement in your second year. Check out these tips on making your CV stand out.</p>
                 <a href="https://www.instagram.com/p/C1oyglxoVlY/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C1oyglxoVlY/?img_index=1 -->
             </div>
             <div class="tips-card">
@@ -46,6 +46,24 @@ session_start();
                 <h3>Wellness Tips</h3>
                 <p>Discover how to increase your wellness during university.</p>
                 <a href="https://www.instagram.com/_gensuccess/p/C8XA8wXI2tb/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C8XA8wXI2tb/?img_index=1 -->
+            </div>
+            <div class="tips-card">
+                <img src="images/secondyear-tip3.jpg" alt="Tip 3">
+                <h3>Mental Health</h3>
+                <p>Discover ways to take care of your mental health.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C8EyGVeItoU/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C8EyGVeItoU/?img_index=1 -->
+            </div>
+            <div class="tips-card">
+                <img src="images/secondyear-tip4.jpg" alt="Tip 4">
+                <h3>Study Technique</h3>
+                <p>Try the 2357 technique as you prepare for exam season.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C6drBmdMKYC/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C6drBmdMKYC/?img_index=1 -->
+            </div>
+            <div class="tips-card">
+                <img src="images/secondyear-tip5.jpg" alt="Tip 5">
+                <h3>Pros of a Placement Year</h3>
+                <p>Check out what's to gain from doing a placement year.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C3SXIPBITxH/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C3SXIPBITxH/?img_index=1 -->
             </div>
         </div>
 

@@ -47,6 +47,24 @@ session_start();
                 <p>Check out the best tips for surviving exam season as you look to achieve a top degree.</p>
                 <a href="https://www.instagram.com/_gensuccess/p/C0wI_CMIMd2/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C0wI_CMIMd2/?img_index=1 -->
             </div>
+            <div class="tips-card">
+                <img src="images/thirdyear-tip3.jpg" alt="Tip 3">
+                <h3>Interview Tips</h3>
+                <p>Have you been invited for a second interview, follow these tips to seal the deal.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C86nr5AI3fd/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C86nr5AI3fd/?img_index=1 -->
+            </div>
+            <div class="tips-card">
+                <img src="images/thirdyear-tip4.jpg" alt="Tip 4">
+                <h3>Job Interviews</h3>
+                <p>As you apply for graduate roles look at some tips to make a good first impression.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C8mP_qAIegf/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C8mP_qAIegf/?img_index=1 -->
+            </div>
+            <div class="tips-card">
+                <img src="images/thirdyear-tip5.jpg" alt="Tip 5">
+                <h3>CVs</h3>
+                <p>Looking for that dream role check out these tips on what makes a CV stand out.</p>
+                <a href="https://www.instagram.com/_gensuccess/p/C8UObWsoL0_/?img_index=1" target="_blank">View Here</a> <!-- https://www.instagram.com/_gensuccess/p/C8UObWsoL0_/?img_index=1 -->
+            </div>
         </div>
 
         <h2 class="section-title">Articles</h2>
