@@ -70,14 +70,34 @@ session_start();
         <h2 class="section-title">Articles</h2>
         <div class="articles-grid">
             <div class="article-card">
-                <h3>How to Stay Motivated</h3>
-                <p>Read this article to find ways to stay motivated throughout the semester.</p>
-                <a href="#" target="_blank">Read Here</a>
+                <h3>Preparing For Second Year</h3>
+                <p>Read this article to prepare you best for your second year.</p>
+                <a href="https://wearehomesforstudents.com/blog/preparing-for-second-year-of-uni-heres-everything-you-should-know" target="_blank">Read Here</a> <!-- https://wearehomesforstudents.com/blog/preparing-for-second-year-of-uni-heres-everything-you-should-know -->
             </div>
             <div class="article-card">
-                <h3>Healthy Eating for Students</h3>
-                <p>Tips on maintaining a healthy diet while managing a busy schedule.</p>
-                <a href="#" target="_blank">Read Here</a>
+                <h3>Placement Year</h3>
+                <p>Learn how a placement year can benefit you.</p>
+                <a href="https://www.iqstudentaccommodation.com/articles/everything-you-need-know-about-university-placement-year" target="_blank">Read Here</a> <!-- https://www.iqstudentaccommodation.com/articles/everything-you-need-know-about-university-placement-year -->
+            </div>
+            <div class="article-card">
+                <h3>Revision</h3>
+                <p>Find out top tips on revising for exams.</p>
+                <a href="https://www.thecompleteuniversityguide.co.uk/student-advice/after-you-start/how-to-revise-for-exams-top-tips" target="_blank">Read Here</a> <!-- https://www.thecompleteuniversityguide.co.uk/student-advice/after-you-start/how-to-revise-for-exams-top-tips -->
+            </div>
+            <div class="article-card">
+                <h3>Accomodation</h3>
+                <p>When to start looking for next years accomodation.</p>
+                <a href="https://studyinn.com/advice-for-students/when-to-look-for-second-year-student-housing/" target="_blank">Read Here</a> <!-- https://studyinn.com/advice-for-students/when-to-look-for-second-year-student-housing/ -->
+            </div>
+            <div class="article-card">
+                <h3>Wellbeing</h3>
+                <p>Check out ways to best support your wellbeing.</p>
+                <a href="https://studyinn.com/advice-for-students/student-wellbeing-resources-for-mental-health-study-inn/" target="_blank">Read Here</a> <!-- https://studyinn.com/advice-for-students/student-wellbeing-resources-for-mental-health-study-inn/ -->
+            </div>
+            <div class="article-card">
+                <h3>Useful Websites</h3>
+                <p>Check out 26 of the most useful websites for university students.</p>
+                <a href="https://studyinn.com/advice-for-students/26-useful-websites-every-university-student-should-know/" target="_blank">Read Here</a> <!-- https://studyinn.com/advice-for-students/26-useful-websites-every-university-student-should-know/ -->
             </div>
         </div>
     </div>

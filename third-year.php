@@ -70,14 +70,34 @@ session_start();
         <h2 class="section-title">Articles</h2>
         <div class="articles-grid">
             <div class="article-card">
-                <h3>How to Stay Motivated</h3>
-                <p>Read this article to find ways to stay motivated throughout the semester.</p>
-                <a href="#" target="_blank">Read Here</a>
+                <h3>Surviving Final Year</h3>
+                <p>Read these tips for getting through your final year.</p>
+                <a href="https://brighterbox.com/blog/article/8-tips-surviving-your-final-year-uni" target="_blank">Read Here</a> <!-- https://brighterbox.com/blog/article/8-tips-surviving-your-final-year-uni -->
             </div>
             <div class="article-card">
-                <h3>Healthy Eating for Students</h3>
-                <p>Tips on maintaining a healthy diet while managing a busy schedule.</p>
-                <a href="#" target="_blank">Read Here</a>
+                <h3>Exam Season Tips</h3>
+                <p>Hear from a final year student on how to combat exam season.</p>
+                <a href="https://www.soas.ac.uk/about/blogs/tips-final-year-student-how-i-cope-exam-season" target="_blank">Read Here</a> <!-- https://www.soas.ac.uk/about/blogs/tips-final-year-student-how-i-cope-exam-season -->
+            </div>
+            <div class="article-card">
+                <h3>Land Your Dream Job</h3>
+                <p>Tips on how to land that dream job.</p>
+                <a href="https://www.adzuna.co.uk/blog/14-tips-for-final-year-students-to-land-the-dream-job/" target="_blank">Read Here</a> <!-- https://www.adzuna.co.uk/blog/14-tips-for-final-year-students-to-land-the-dream-job/ -->
+            </div>
+            <div class="article-card">
+                <h3>Job Interviews</h3>
+                <p>Check out the top tips on acing job interviews.</p>
+                <a href="https://www.ucas.com/advisers/guides-and-resources/adviser-news/news/acing-job-interviews-top-tips-students" target="_blank">Read Here</a> <!-- https://www.ucas.com/advisers/guides-and-resources/adviser-news/news/acing-job-interviews-top-tips-students -->
+            </div>
+            <div class="article-card">
+                <h3>Life After University</h3>
+                <p>Check out this graduate guide on life after university.</p>
+                <a href="https://brighterbox.com/blog/article/life-after-university-graduate-survival-guide" target="_blank">Read Here</a> <!-- https://brighterbox.com/blog/article/life-after-university-graduate-survival-guide -->
+            </div>
+            <div class="article-card">
+                <h3>Dissertation Advice</h3>
+                <p>Read this for some advice on how to tackle your final year dissertation.</p>
+                <a href="https://medium.com/@Kayleigh_Marks/dissertation-advice-from-a-final-year-student-7470b06686bd" target="_blank">Read Here</a> <!-- https://medium.com/@Kayleigh_Marks/dissertation-advice-from-a-final-year-student-7470b06686bd -->
             </div>
         </div>
     </div>
