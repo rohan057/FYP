@@ -204,17 +204,17 @@ nav ul li a:hover {
     width: 250px;
     margin: 10px;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #160032;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    color: #333;
+    color: #fff;
     transition: background-color 0.3s ease;
 }
 
 .info-box:hover {
-    background-color: #e0e0e0;
+    background-color: #940090;
 }
 
 .info-box-img {
@@ -910,4 +910,20 @@ button:hover {
 .tips-card:hover, .article-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #940090;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #160032;
 }

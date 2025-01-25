@@ -33,7 +33,7 @@ session_start();
     </nav>
 
     <div class="hero-image">
-        <img src="images/index-image.png" alt="Student Wellbeing" /> <!-- https://www.celcis.org/knowledge-bank/search-bank/blog/how-students-are-helping-shape-university-led-and-peer-support-students-care-experience -->
+        <img src="images/index-image.jpg" alt="Student Wellbeing" /> <!-- https://www.celcis.org/knowledge-bank/search-bank/blog/how-students-are-helping-shape-university-led-and-peer-support-students-care-experience -->
     </div>
 
     <div class="info-boxes">
