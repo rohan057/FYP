@@ -9,6 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise Videos</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/exercise-videos.css">
 </head>
 <body>
     <nav>
@@ -31,5 +32,28 @@ session_start();
             <?php endif; ?>
         </ul>
     </nav>
+
+    <h1 class="exercisevideo-title">Exercise Videos</h1>
+
+    <div class="video-container">
+        <div class="video-grid">
+            <div class="video-item">
+                <h3>Full Body Workout</h3>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Leg Strength Training</h3>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Core and Abs Routine</h3>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Upper Body Strength</h3>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
