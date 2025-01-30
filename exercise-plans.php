@@ -146,7 +146,7 @@ session_start();
         <section id="hard-plans">
             <h2>Hard Plans</h2>
             <div class="plan">
-                <h3>Plan 1: Full Body Workout (15 minutes)</h3>
+                <h3>Plan 1: Full Body Workout (15 minutes)</h3> <!-- https://www.youtube.com/watch?v=gnTzk1yUHB4 -->
                 <ul>
                     <li>15 seconds rest between exercises</li>
                     <li>45 seconds burpees</li>
