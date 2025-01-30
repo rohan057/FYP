@@ -36,7 +36,7 @@ session_start();
         <h1 class="exercise-title">Exercise Plans</h1>
         
         <section id="easy-plans">
-            <h2>Easy Plans</h2>
+            <h2>Beginner Plans</h2>
             <div class="plan">
                 <h3>Plan 1: Walking & Stretching</h3> <!-- https://www.lowa.co.uk/blogs/news/key-stretching-exercises-walkers?srsltid=AfmBOoqg5YJB4nuYukvjywdlf2aWa8QPsYog69Cw9mE1532F2a4egfMP -->
                 <ul>
@@ -83,7 +83,7 @@ session_start();
         </section>
 
         <section id="medium-plans">
-            <h2>Medium Plans</h2>
+            <h2>Intermediate Plans</h2>
             <div class="plan">
                 <h3>Plan 1: Advanced Bodyweight Exercises (3 circuits)</h3> <!-- https://www.nerdfitness.com/blog/circuit-training-build-some-muscles-burn-some-fat/ -->
                 <ul>
@@ -144,7 +144,7 @@ session_start();
         </section>
 
         <section id="hard-plans">
-            <h2>Hard Plans</h2>
+            <h2>Advanced Plans</h2>
             <div class="plan">
                 <h3>Plan 1: Full Body Workout (15 minutes)</h3> <!-- https://www.youtube.com/watch?v=gnTzk1yUHB4 -->
                 <ul>
@@ -167,23 +167,60 @@ session_start();
                 </ul>
             </div>
             <div class="plan">
-                <h3>Plan 2: Strength & Endurance</h3>
+                <h3>Plan 2: Full Body Cardio Workout (20 minutes)</h3> <!-- https://www.youtube.com/watch?v=79cx5vmf3Qg -->
                 <ul>
-                    <li>20 push-ups</li>
-                    <li>15 jump squats</li>
-                    <li>20 walking lunges per leg</li>
-                    <li>30-second plank hold</li>
-                    <li>Repeat 4 times</li>
+                    <li>45 seconds high knee taps</li>
+                    <li>45 seconds mountain climbers</li>
+                    <li>45 seconds lunges</li>
+                    <li>45 seconds bicycles</li>
+                    <li>45 seconds burpees (no jump)</li>
+                    <li>45 seconds jumping jacks</li>
+                    <li>45 seconds plank alternating toe taps</li>
+                    <li>45 seconds squats</li>
+                    <li>45 seconds flutter kicks</li>
+                    <li>45 seconds butt kicks</li>
+                    <li>45 seconds in and outs</li>
+                    <li>45 seconds alternating side lunges</li>
+                    <li>45 seconds russian twists</li>
+                    <li>45 seconds side hops</li>
+                    <li>45 seconds plank side to side</li>
+                    <li>45 seconds alternating curtsy lunges</li>
+                    <li>45 seconds seated in and outs</li>
                 </ul>
             </div>
             <div class="plan">
-                <h3>Plan 3: Full Body HIIT</h3>
+                <h3>Plan 3: Abs Workout (30 minutes)</h3> <!-- https://www.youtube.com/watch?v=P1mInEK7BEU -->
                 <ul>
-                    <li>30 seconds burpees</li>
-                    <li>30 seconds squat jumps</li>
-                    <li>30 seconds push-ups</li>
-                    <li>30 seconds plank</li>
-                    <li>Rest for 1 minute, repeat 4 times</li>
+                    <li>40 seconds high knee taps</li>
+                    <li>40 seconds butt kick</li>
+                    <li>40 seconds jumping jacks</li>
+                    <li>40 seconds seated in and outs</li>
+                    <li>40 seconds russian twists</li>
+                    <li>40 seconds chair sit-ups</li>
+                    <li>40 seconds chair crunches</li>
+                    <li>40 seconds lay knee raises</li>
+                    <li>40 seconds reach-ups</li>
+                    <li>40 seconds star crunches</li>
+                    <li>40 seconds bicycles</li>
+                    <li>40 seconds bolt hold</li>
+                    <li>40 seconds seated leg flutter</li>
+                    <li>40 seconds crucifix</li>
+                    <li>40 seconds alternating single leg raise</li>
+                    <li>40 seconds laying leg raise</li>
+                    <li>40 seconds static hold</li>
+                    <li>40 seconds toe touches</li>
+                    <li>40 seconds burpees</li>
+                    <li>40 seconds plank hold</li>
+                    <li>40 seconds in and outs open and closed</li>
+                    <li>40 seconds switching mountain climbers</li>
+                    <li>40 seconds plank alternating toe taps</li>
+                    <li>40 seconds plank knee to elbows</li>
+                    <li>40 seconds plank push-ups</li>
+                    <li>40 seconds side plank raises</li>
+                    <li>40 seconds high plank toe taps</li>
+                    <li>40 seconds plank open and closed</li>
+                    <li>40 seconds playing side to side</li>
+                    <li>40 seconds plank up and down</li>
                 </ul>
             </div>
         </section>
