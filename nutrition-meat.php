@@ -82,7 +82,7 @@ session_start();
             </div>
         </section>
 
-        <!-- Lunch Section -->
+        <!-- https://www.thespruceeats.com/lunch-4162818 -->
         <section class="meal-category">
             <h2>Lunch</h2>
             <div class="meal-container">
@@ -117,14 +117,14 @@ session_start();
                     <a href="pdfs/quesadillas.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/honey-chipotle-chicken-quesadillas-8582977 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/tunacado.webp" alt="Lunch Dish 7">
-                    <p>Tunacado Sandwich</p>
-                    <a href="pdfs/tunacado.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/pot_pulled_chicken.webp" alt="Lunch Dish 7">
+                    <p>Pot Pulled Chicken</p>
+                    <a href="pdfs/pot_pulled_chicken.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/instant-pot-pulled-chicken-5221830 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/tunacado.webp" alt="Lunch Dish 8">
-                    <p>Tunacado Sandwich</p>
-                    <a href="pdfs/tunacado.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/egg_salad.webp" alt="Lunch Dish 8">
+                    <p>Egg Salad with Relish</p>
+                    <a href="pdfs/egg_salad.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/egg-salad-with-relish-5204777 -->
                 </div>
             </div>
         </section>
@@ -134,14 +134,44 @@ session_start();
             <h2>Dinner</h2>
             <div class="meal-container">
                 <div class="meal-section">
-                    <img src="images/dinner1.jpg" alt="Dinner Dish 1">
-                    <p>A hearty meat dish for dinner.</p>
-                    <a href="pdfs/dinner1.pdf" download class="download-btn">Download Recipe</a>
+                    <img src="images/chicken_noodle.webp" alt="Dinner Dish 1">
+                    <p>Pot Chicken Noodle Soup</p>
+                    <a href="pdfs/chicken_noodle.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/instant-pot-chicken-noodle-soup-4771904 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/dinner2.jpg" alt="Dinner Dish 2">
-                    <p>Flavorful meat dish to end the day.</p>
-                    <a href="pdfs/dinner2.pdf" download class="download-btn">Download Recipe</a>
+                    <img src="images/chicken_fajitas.webp" alt="Dinner Dish 2">
+                    <p>Chicken Fajitas</p>
+                    <a href="pdfs/chicken_fajitas.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/easy-fajitas-recipe-3052908 -->
+                </div>
+                <div class="meal-section">
+                    <img src="images/cast_iron_steak.webp" alt="Dinner Dish 3">
+                    <p>Cast Iron Steak</p>
+                    <a href="pdfs/cast_iron_steak.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/cast-iron-steak-recipe-5498568 -->
+                </div>
+                <div class="meal-section">
+                    <img src="images/chicken_parmesan.webp" alt="Dinner Dish 4">
+                    <p>Chicken Parmesan</p>
+                    <a href="pdfs/chicken_parmesan.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/easy-chicken-parmesan-3052878 -->
+                </div>
+                <div class="meal-section">
+                    <img src="images/shoyu_chicken.webp" alt="Dinner Dish 5">
+                    <p>Shoyu Chicken</p>
+                    <a href="pdfs/shoyu_chicken.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/shoyu-chicken-recipe-6827971 -->
+                </div>
+                <div class="meal-section">
+                    <img src="images/chicken_alfredo_pot_pie.webp" alt="Dinner Dish 6">
+                    <p>Chicken Alfredo Pot Pie</p>
+                    <a href="pdfs/chicken_alfredo_pot_pie.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/chicken-alfredo-pot-pie-recipe-6825957 -->
+                </div>
+                <div class="meal-section">
+                    <img src="images/breaded_pork_chops.webp" alt="Dinner Dish 7">
+                    <p>Breaded Pork Chops</p>
+                    <a href="pdfs/breaded_pork_chops.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/baked-breaded-pork-chops-recipe-5213501 -->
+                </div>
+                <div class="meal-section">
+                    <img src="images/sour_cream_onion_chicken.webp" alt="Dinner Dish 8">
+                    <p>Sour Cream & Onion Chicken</p>
+                    <a href="pdfs/sour_cream_onion_chicken.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/sour-cream-and-onion-chicken-recipe-5204249 -->
                 </div>
             </div>
         </section>
