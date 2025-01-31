@@ -42,7 +42,7 @@ session_start();
                 <div class="meal-section">
                     <img src="images/biscuits_gravy.webp" alt="Breakfast Dish 1">
                     <p>Biscuits and Gravy</p>
-                    <a href="pdfs/biscuits _gravy.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/biscuits-and-gravy-recipe-7377382 -->
+                    <a href="pdfs/biscuits_gravy.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/biscuits-and-gravy-recipe-7377382 -->
                 </div>
                 <div class="meal-section">
                     <img src="images/irish_breakfast.webp" alt="Breakfast Dish 2">
