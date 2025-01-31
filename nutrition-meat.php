@@ -129,7 +129,7 @@ session_start();
             </div>
         </section>
 
-        <!-- Dinner Section -->
+        <!-- https://www.thespruceeats.com/dinner-4162806 -->
         <section class="meal-category">
             <h2>Dinner</h2>
             <div class="meal-container">
