@@ -134,44 +134,44 @@ session_start();
             <h2>Dinner</h2>
             <div class="meal-container">
                 <div class="meal-section">
-                    <img src="images/chicken_noodle.webp" alt="Dinner Dish 1">
-                    <p>Pot Chicken Noodle Soup</p>
-                    <a href="pdfs/chicken_noodle.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/cheesy_stuffed_shells.webp" alt="Dinner Dish 1">
+                    <p>Cheesy Stuffed Shells</p>
+                    <a href="pdfs/cheesy_stuffed_shells.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/stuffed-shells-recipe-8600137 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/chicken_fajitas.webp" alt="Dinner Dish 2">
-                    <p>Chicken Fajitas</p>
-                    <a href="pdfs/chicken_fajitas.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/acorn_squash_soup.webp" alt="Dinner Dish 2">
+                    <p>Acorn Squash Soup</p>
+                    <a href="pdfs/acorn_squash_soup.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/acorn-squash-soup-recipe-7969247 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/cast_iron_steak.webp" alt="Dinner Dish 3">
-                    <p>Cast Iron Steak</p>
-                    <a href="pdfs/cast_iron_steak.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/no_fail_cacio.webp" alt="Dinner Dish 3">
+                    <p>No Fail Cacio e Pepe</p>
+                    <a href="pdfs/no_fail_cacio.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/no-fail-cacio-e-pepe-recipe-7814184 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/chicken_parmesan.webp" alt="Dinner Dish 4">
-                    <p>Chicken Parmesan</p>
-                    <a href="pdfs/chicken_parmesan.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/chana_masala.webp" alt="Dinner Dish 4">
+                    <p>Chana Masala</p>
+                    <a href="pdfs/chana_masala.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/chana-masala-recipe-7153398 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/shoyu_chicken.webp" alt="Dinner Dish 5">
-                    <p>Shoyu Chicken</p>
-                    <a href="pdfs/shoyu_chicken.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/teriyaki_tofu.webp" alt="Dinner Dish 5">
+                    <p>Teriyaki Tofu</p>
+                    <a href="pdfs/teriyaki_tofu.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/crispy-teriyaki-tofu-with-broccoli-recipe-8431066 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/chicken_alfredo_pot_pie.webp" alt="Dinner Dish 6">
-                    <p>Chicken Alfredo Pot Pie</p>
-                    <a href="pdfs/chicken_alfredo_pot_pie.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/pasta_primavera.webp" alt="Dinner Dish 6">
+                    <p>Pasta Primavera</p>
+                    <a href="pdfs/pasta_primavera.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/pasta-primavera-recipe-7503609 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/breaded_pork_chops.webp" alt="Dinner Dish 7">
-                    <p>Breaded Pork Chops</p>
-                    <a href="pdfs/breaded_pork_chops.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/vegetarian_quesadillas.webp" alt="Dinner Dish 7">
+                    <p>Vegetarian Quesadillas</p>
+                    <a href="pdfs/vegetarian_quesadillas.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/grilled-zucchini-and-corn-quesadillas-recipe-7483566 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/sour_cream_onion_chicken.webp" alt="Dinner Dish 8">
-                    <p>Sour Cream & Onion Chicken</p>
-                    <a href="pdfs/sour_cream_onion_chicken.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/kelp_noodles.webp" alt="Dinner Dish 8">
+                    <p>Spicy Tahini Kelp Noodles</p>
+                    <a href="pdfs/kelp_noodles.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/kelp-noodles-recipe-5181416 -->
                 </div>
             </div>
         </section>
