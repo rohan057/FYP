@@ -87,44 +87,44 @@ session_start();
             <h2>Lunch</h2>
             <div class="meal-container">
                 <div class="meal-section">
-                    <img src="images/avocado_toast.webp" alt="Lunch Dish 1">
-                    <p>Avocado Toast</p>
-                    <a href="pdfs/avocado_toast.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/butternut_squash_soup.webp" alt="Lunch Dish 1">
+                    <p>Butternut Squash Soup</p>
+                    <a href="pdfs/butternut_squash_soup.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/butternut-squash-soup-1001162 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/pasta_soup.webp" alt="Lunch Dish 2">
-                    <p>Toasted Pasta Soup</p>
-                    <a href="pdfs/pasta_soup.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/vegan_thai_salad.webp" alt="Lunch Dish 2">
+                    <p>Pad Thai Salad</p>
+                    <a href="pdfs/vegan_thai_salad.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/raw-vegan-pad-thai-salad-recipe-3377474 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/black_bean_hummus_wrap.webp" alt="Lunch Dish 3">
-                    <p>Black Bean & Hummus Wrap</p>
-                    <a href="pdfs/black_bean_hummus_wrap.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/rice_salad.webp" alt="Lunch Dish 3">
+                    <p>Rice Salad</p>
+                    <a href="pdfs/rice_salad.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/cold-asian-rice-salad-with-veggies-3377789 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/falafel_sandwich.webp" alt="Lunch Dish 4">
-                    <p>Falafel Sandwich</p>
-                    <a href="pdfs/falafel_sandwich.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/sesame_noodles.webp" alt="Lunch Dish 4">
+                    <p>Sesame Noodles</p>
+                    <a href="pdfs/sesame_noodles.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/cold-vegan-chinese-sesame-noodles-recipe-3377147 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/vegetarian_chili.webp" alt="Lunch Dish 5">
-                    <p>Vegetarian Chilli</p>
-                    <a href="pdfs/vegetarian_chili.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/carrot_soup_coconut.webp" alt="Lunch Dish 5">
+                    <p>Carrot Soup with Coconut</p>
+                    <a href="pdfs/carrot_soup_coconut.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/creamy-vegan-carrot-soup-with-coconut-3377977 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/quinoa_salad.webp" alt="Lunch Dish 6">
-                    <p>Quinoa Salad</p>
-                    <a href="pdfs/quinoa_salad.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/cauliflower_tacos.webp" alt="Lunch Dish 6">
+                    <p>Cauliflower Tacos</p>
+                    <a href="pdfs/cauliflower_tacos.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/cauliflower-tacos-4800408 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/pasta_salad_rotini.webp" alt="Lunch Dish 7">
-                    <p>Pasta Salad with Rotini</p>
-                    <a href="pdfs/pasta_salad_rotini.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/tofu_burgers.webp" alt="Lunch Dish 7">
+                    <p>Tofu Burgers</p>
+                    <a href="pdfs/tofu_burgers.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/vegan-tofu-veggie-burgers-recipe-3377169 -->
                 </div>
                 <div class="meal-section">
-                    <img src="images/rice_bean_burrito.webp" alt="Lunch Dish 8">
-                    <p>Rice and Bean Burrito</p>
-                    <a href="pdfs/rice_bean_burrito.pdf" download class="download-btn">Download Recipe</a> <!--  -->
+                    <img src="images/cucumber_rolls.webp" alt="Lunch Dish 8">
+                    <p>Cucumber Rolls</p>
+                    <a href="pdfs/cucumber_rolls.pdf" download class="download-btn">Download Recipe</a> <!-- https://www.thespruceeats.com/light-vegan-cucumber-spring-roll-recipe-3377833 -->
                 </div>
             </div>
         </section>
