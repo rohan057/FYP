@@ -1,5 +1,45 @@
 <?php
 session_start();
+
+$host = 'localhost';
+$dbname = 'fyp';
+$username = 'root';
+$password = '';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $dob = $_POST['dob'];
+    $phone = $_POST['phone'] ?? null;
+    $external_support = $_POST['external_support'];
+    $contact_methods = isset($_POST['contact_method']) ? implode(', ', $_POST['contact_method']) : null;
+    $availability = isset($_POST['availability']) ? json_encode($_POST['availability']) : null;
+
+    try {
+        $query = "INSERT INTO bookings (dob, phone, external_support, contact_method, availability) 
+                  VALUES (:dob, :phone, :external_support, :contact_method, :availability)";
+        $stmt = $pdo->prepare($query);
+
+        $stmt->bindParam(':dob', $dob);
+        $stmt->bindParam(':phone', $phone);
+        $stmt->bindParam(':external_support', $external_support);
+        $stmt->bindParam(':contact_method', $contact_methods);
+        $stmt->bindParam(':availability', $availability);
+
+        if ($stmt->execute()) {
+            $success_message = "Booking request submitted successfully.";
+        } else {
+            $error_message = "Failed to submit the booking request. Please try again.";
+        }
+    } catch (PDOException $e) {
+        $error_message = "Error: " . $e->getMessage();
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +61,7 @@ session_start();
             <li><a href="exercise.php">Exercise</a></li>
             <li><a href="nutrition.php">Nutrition</a></li>
             <li><a href="meditation-mindfulness.php">Meditation and Mindfulness</a></li>
-            
+
             <?php if (isset($_SESSION['user_id'])): ?>
                 <li><a href="logout.php">Logout</a></li>
                 <li><a href="journal.php">Journal</a></li>
@@ -34,6 +74,13 @@ session_start();
 
     <div class="apply-container">
         <h1>Apply for Counselling/Workshops</h1>
+
+        <?php if (isset($success_message)): ?>
+            <p class="success"><?php echo $success_message; ?></p>
+        <?php elseif (isset($error_message)): ?>
+            <p class="error"><?php echo $error_message; ?></p>
+        <?php endif; ?>
+
         <form action="counselling-workshops.php" method="POST" class="apply-form">
             <div class="form-group">
                 <label for="dob">Date of Birth <span>*</span></label>
@@ -42,7 +89,7 @@ session_start();
 
             <div class="form-group">
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890">
+                <input type="tel" id="phone" name="phone" required placeholder="e.g., 123-456-7890">
             </div>
 
             <div class="form-group">
@@ -60,14 +107,14 @@ session_start();
             <div class="form-group">
                 <label for="contact_method">What are your preferred method(s) of contact?</label>
                 <div class="checkbox-group">
-                    <label for="face_to_face">
-                        <input type="checkbox" id="face_to_face" name="contact_method" value="face_to_face"> Face to Face
+                    <label>
+                        <input type="checkbox" name="contact_method[]" value="Face to Face"> Face to Face
                     </label>
-                    <label for="online_meeting">
-                        <input type="checkbox" id="online_meeting" name="contact_method" value="online_meeting"> Online Meeting
+                    <label>
+                        <input type="checkbox" name="contact_method[]" value="Online Meeting"> Online Meeting
                     </label>
-                    <label for="telephone">
-                        <input type="checkbox" id="telephone" name="contact_method" value="telephone"> Telephone
+                    <label>
+                        <input type="checkbox" name="contact_method[]" value="Telephone"> Telephone
                     </label>
                 </div>
             </div>
@@ -75,34 +122,22 @@ session_start();
             <div class="form-group">
                 <label for="availability">When would you be available?</label>
                 <div class="availability-group">
-                    <label for="monday">Mondays:</label>
-                    <input type="checkbox" id="monday_am" name="availability[monday]" value="AM"> AM
-                    <input type="checkbox" id="monday_pm" name="availability[monday]" value="PM"> PM
-                    <input type="checkbox" id="monday_all_day" name="availability[monday]" value="All Day"> All Day
-                </div>
-                <div class="availability-group">
-                    <label for="tuesday">Tuesdays:</label>
-                    <input type="checkbox" id="tuesday_am" name="availability[tuesday]" value="AM"> AM
-                    <input type="checkbox" id="tuesday_pm" name="availability[tuesday]" value="PM"> PM
-                    <input type="checkbox" id="tuesday_all_day" name="availability[tuesday]" value="All Day"> All Day
-                </div>
-                <div class="availability-group">
-                    <label for="wednesday">Wednesdays:</label>
-                    <input type="checkbox" id="wednesday_am" name="availability[wednesday]" value="AM"> AM
-                    <input type="checkbox" id="wednesday_pm" name="availability[wednesday]" value="PM"> PM
-                    <input type="checkbox" id="wednesday_all_day" name="availability[wednesday]" value="All Day"> All Day
-                </div>
-                <div class="availability-group">
-                    <label for="thursday">Thursdays:</label>
-                    <input type="checkbox" id="thursday_am" name="availability[thursday]" value="AM"> AM
-                    <input type="checkbox" id="thursday_pm" name="availability[thursday]" value="PM"> PM
-                    <input type="checkbox" id="thursday_all_day" name="availability[thursday]" value="All Day"> All Day
-                </div>
-                <div class="availability-group">
-                    <label for="friday">Fridays:</label>
-                    <input type="checkbox" id="friday_am" name="availability[friday]" value="AM"> AM
-                    <input type="checkbox" id="friday_pm" name="availability[friday]" value="PM"> PM
-                    <input type="checkbox" id="friday_all_day" name="availability[friday]" value="All Day"> All Day
+                    <?php 
+                    $days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+                    foreach ($days as $day): ?>
+                        <div class="day-group">
+                            <strong><?php echo $day; ?>:</strong>
+                            <label>
+                                <input type="checkbox" name="availability[<?php echo strtolower($day); ?>][]" value="AM"> AM
+                            </label>
+                            <label>
+                                <input type="checkbox" name="availability[<?php echo strtolower($day); ?>][]" value="PM"> PM
+                            </label>
+                            <label>
+                                <input type="checkbox" name="availability[<?php echo strtolower($day); ?>][]" value="All Day"> All Day
+                            </label>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
 
