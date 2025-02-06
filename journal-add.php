@@ -64,12 +64,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </ul>
     </nav>
 
-    <h1>Add a New Journal Entry</h1>
-    <form method="POST">
-        <label for="journal_entry">Write your entry here:</label>
-        <textarea name="journal_entry" id="journal_entry" rows="5" cols="30"></textarea>
+    <h1 class="journal-add-header">Add a New Journal Entry</h1>
+    <form class="journal-add-form" method="POST">
+        <textarea class="journal-add-textarea" name="journal_entry" id="journal_entry" rows="5" cols="30" placeholder="Write your journal entry here..."></textarea>
         <br>
-        <button type="submit">Add Entry</button>
+        <button class="journal-add-button" type="submit">Add Entry</button>
     </form>
+
 </body>
 </html>

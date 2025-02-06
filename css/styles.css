@@ -164,6 +164,7 @@ nav ul li a:hover {
     border-radius: 5px;
     border: 1px solid #ddd;
     resize: vertical;
+    font-family: Arial, sans-serif;
 }
 
 .feedback-page form input[type="submit"] {
@@ -1255,4 +1256,45 @@ section h2 {
 .mindfulness-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.journal-add-header {
+    text-align: center;
+    color: #333;
+    margin-top: 120px;
+}
+
+.journal-add-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.journal-add-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #940090;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin: 1rem auto;
+}
+
+button:hover {
+    background-color: #160032;
 }
