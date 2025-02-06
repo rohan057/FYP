@@ -1316,3 +1316,19 @@ button:hover {
 .message-container {
     margin-bottom: 20px;
 }
+
+.no-entries {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.journal-header {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 120px;
+}

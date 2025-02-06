@@ -54,7 +54,7 @@ $entries = $stmt->fetchAll();
         </ul>
     </nav>
 
-    <h1>Your Journal Entries</h1>
+    <h1 class="journal-header">Your Journal Entries</h1>
 
     <?php if ($entries): ?>
         <ul>
@@ -67,7 +67,9 @@ $entries = $stmt->fetchAll();
             <?php endforeach; ?>
         </ul>
     <?php else: ?>
-        <p>No entries found. <a href="journal-add.php">Add a new entry</a>.</p>
+        <div class="no-entries">
+            <p>No entries found. <a href="journal-add.php">Add a new entry</a>.</p>
+        </div>
     <?php endif; ?>
 </body>
 </html>
