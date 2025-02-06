@@ -1,5 +1,27 @@
 <?php
 session_start();
+
+$host = 'localhost';
+$dbname = 'fyp';
+$username = 'root';
+$password = '';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
+
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+
+$user_id = $_SESSION['user_id'];
+$stmt = $pdo->prepare("SELECT journal_entry, created_at FROM private_journal WHERE user_id = ? ORDER BY created_at DESC");
+$stmt->execute([$user_id]);
+$entries = $stmt->fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -31,5 +53,21 @@ session_start();
             <?php endif; ?>
         </ul>
     </nav>
+
+    <h1>Your Journal Entries</h1>
+
+    <?php if ($entries): ?>
+        <ul>
+            <?php foreach ($entries as $entry): ?>
+                <li>
+                    <p><strong>Date:</strong> <?= htmlspecialchars($entry['created_at']) ?></p>
+                    <p><?= nl2br(htmlspecialchars($entry['journal_entry'])) ?></p>
+                    <hr>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    <?php else: ?>
+        <p>No entries found. <a href="journal-add.php">Add a new entry</a>.</p>
+    <?php endif; ?>
 </body>
 </html>
