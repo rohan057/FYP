@@ -1298,3 +1298,21 @@ button {
 button:hover {
     background-color: #160032;
 }
+
+.success-message {
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.message-container {
+    margin-bottom: 20px;
+}

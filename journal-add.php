@@ -13,23 +13,25 @@ try {
     die("Connection failed: " . $e->getMessage());
 }
 
+$message = '';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $journal_entry = isset($_POST['journal_entry']) ? trim($_POST['journal_entry']) : '';
 
     if (!empty($journal_entry)) {
         $user_id = $_SESSION['user_id'];
-        
+
         $stmt = $pdo->prepare("INSERT INTO private_journal (user_id, journal_entry) VALUES (?, ?)");
         $stmt->bindParam(1, $user_id, PDO::PARAM_INT);
         $stmt->bindParam(2, $journal_entry, PDO::PARAM_STR);
 
         if ($stmt->execute()) {
-            echo "<p>Entry added successfully!</p>";
+            $message = "<p class='success-message'>Entry added successfully!</p>";
         } else {
-            echo "<p>Error: " . $stmt->errorInfo()[2] . "</p>";
+            $message = "<p class='error-message'>Error: " . $stmt->errorInfo()[2] . "</p>";
         }
     } else {
-        echo "<p>Please enter some text.</p>";
+        $message = "<p class='error-message'>Please enter some text.</p>";
     }
 }
 ?>
@@ -65,6 +67,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </nav>
 
     <h1 class="journal-add-header">Add a New Journal Entry</h1>
+
+    <?php if ($message): ?>
+        <div class="message-container">
+            <?php echo $message; ?>
+        </div>
+    <?php endif; ?>
+
     <form class="journal-add-form" method="POST">
         <textarea class="journal-add-textarea" name="journal_entry" id="journal_entry" rows="5" cols="30" placeholder="Write your journal entry here..."></textarea>
         <br>
