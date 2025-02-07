@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </nav>
 
     <div class="apply-container">
-        <h1>Apply for Counselling/Workshops</h1>
+        <h1>Book a Counselling Appointment</h1>
 
         <?php if (isset($success_message)): ?>
             <p class="success"><?php echo $success_message; ?></p>
