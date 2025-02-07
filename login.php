@@ -52,13 +52,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <nav>
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="questionnaire.php">Request Resources</a></li>
-            <li><a href="anonymous-feedback.php">Anonymous Feedback</a></li>
-            <li><a href="funding.php">Funding</a></li>
             <li><a href="year-resources.php">Student Resources</a></li>
             <li><a href="exercise.php">Exercise</a></li>
             <li><a href="nutrition.php">Nutrition</a></li>
             <li><a href="meditation-mindfulness.php">Meditation and Mindfulness</a></li>
+            <li><a href="funding.php">Funding</a></li>
+            <li><a href="questionnaire.php">Request Resources</a></li>
+            <li><a href="anonymous-feedback.php">Anonymous Feedback</a></li>
             
             <?php if (isset($_SESSION['user_id'])): ?>
                 <li><a href="logout.php">Logout</a></li>
