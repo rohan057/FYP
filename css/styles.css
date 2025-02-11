@@ -1332,3 +1332,58 @@ button:hover {
     text-align: center;
     margin-top: 120px;
 }
+
+.goals-add-header {
+    text-align: center;
+    color: #333;
+    margin-top: 120px;
+}
+
+.goals-add-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goals-add-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+.goals-add-button {
+    background-color: #940090;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin: 1rem auto;
+}
+
+.goals-add-button:hover {
+    background-color: #160032;
+}
+
+.goals-add-success {
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.goals-add-error {
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
