@@ -20,31 +20,26 @@ if (!isset($_SESSION['user_id'])) {
 
 $user_id = $_SESSION['user_id'];
 
-// Handle goal completion or deletion
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $goal_id = $_POST['goal_id'];
-    $action = $_POST['action']; // 'complete' or 'delete'
+    $action = $_POST['action'];
 
     if ($action === 'complete') {
-        // Retrieve the reward credits for the goal
         $stmt = $pdo->prepare("SELECT reward_credits FROM goals WHERE goal_id = ? AND user_id = ?");
         $stmt->execute([$goal_id, $user_id]);
         $goal = $stmt->fetch();
 
         if ($goal) {
-            // Add reward credits to user's account
             $reward_credits = $goal['reward_credits'];
             $updateCredits = $pdo->prepare("UPDATE users SET user_credits = user_credits + ? WHERE id = ?");
             $updateCredits->execute([$reward_credits, $user_id]);
 
-            // Delete the goal
             $deleteGoal = $pdo->prepare("DELETE FROM goals WHERE goal_id = ? AND user_id = ?");
             $deleteGoal->execute([$goal_id, $user_id]);
 
             echo "<p class='success-message'>Goal marked as completed! You earned {$reward_credits} credits.</p>";
         }
     } elseif ($action === 'delete') {
-        // Delete the goal without adding credits
         $deleteGoal = $pdo->prepare("DELETE FROM goals WHERE goal_id = ? AND user_id = ?");
         $deleteGoal->execute([$goal_id, $user_id]);
 
@@ -52,7 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Fetch all goals for the user
 $stmt = $pdo->prepare("SELECT goal_id, goal, is_completed, reward_credits FROM goals WHERE user_id = ?");
 $stmt->execute([$user_id]);
 $goals = $stmt->fetchAll();
@@ -65,6 +59,21 @@ $goals = $stmt->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Goals</title>
     <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        function confirmAction(button) {
+            var action = button.value;
+            var message = '';
+
+            if (action === 'complete') {
+                message = 'Are you sure you want to mark this goal as completed?';
+            } else if (action === 'delete') {
+                message = 'Are you sure you want to delete this goal?';
+            }
+
+            return confirm(message);
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -97,7 +106,7 @@ $goals = $stmt->fetchAll();
                         <p><strong>Goal:</strong> <?= htmlspecialchars($goal['goal']) ?></p>
                         <p><strong>Status:</strong> <?= $goal['is_completed'] ? "Completed ✅" : "In Progress ⏳" ?></p>
                         <p><strong>Reward Credits:</strong> <?= htmlspecialchars($goal['reward_credits']) ?></p>
-                        <form method="POST">
+                        <form method="POST" onsubmit="return confirmAction(this.querySelector('button:focus'))">
                             <input type="hidden" name="goal_id" value="<?= $goal['goal_id'] ?>">
                             <button type="submit" name="action" value="complete" class="complete-btn">Mark as Completed</button>
                             <button type="submit" name="action" value="delete" class="delete-btn">Delete Goal</button>
