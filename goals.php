@@ -19,7 +19,41 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 $user_id = $_SESSION['user_id'];
-$stmt = $pdo->prepare("SELECT goal, is_completed, reward_credits FROM goals WHERE user_id = ?");
+
+// Handle goal completion or deletion
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $goal_id = $_POST['goal_id'];
+    $action = $_POST['action']; // 'complete' or 'delete'
+
+    if ($action === 'complete') {
+        // Retrieve the reward credits for the goal
+        $stmt = $pdo->prepare("SELECT reward_credits FROM goals WHERE goal_id = ? AND user_id = ?");
+        $stmt->execute([$goal_id, $user_id]);
+        $goal = $stmt->fetch();
+
+        if ($goal) {
+            // Add reward credits to user's account
+            $reward_credits = $goal['reward_credits'];
+            $updateCredits = $pdo->prepare("UPDATE users SET user_credits = user_credits + ? WHERE id = ?");
+            $updateCredits->execute([$reward_credits, $user_id]);
+
+            // Delete the goal
+            $deleteGoal = $pdo->prepare("DELETE FROM goals WHERE goal_id = ? AND user_id = ?");
+            $deleteGoal->execute([$goal_id, $user_id]);
+
+            echo "<p class='success-message'>Goal marked as completed! You earned {$reward_credits} credits.</p>";
+        }
+    } elseif ($action === 'delete') {
+        // Delete the goal without adding credits
+        $deleteGoal = $pdo->prepare("DELETE FROM goals WHERE goal_id = ? AND user_id = ?");
+        $deleteGoal->execute([$goal_id, $user_id]);
+
+        echo "<p class='success-message'>Goal deleted successfully.</p>";
+    }
+}
+
+// Fetch all goals for the user
+$stmt = $pdo->prepare("SELECT goal_id, goal, is_completed, reward_credits FROM goals WHERE user_id = ?");
 $stmt->execute([$user_id]);
 $goals = $stmt->fetchAll();
 ?>
@@ -55,23 +89,26 @@ $goals = $stmt->fetchAll();
     </nav>
 
     <div class="goals-container">
-        <div class="goals-left">
-            <h1>Your Goals</h1>
-            <?php if ($goals): ?>
-                <ul class="goals-list">
-                    <?php foreach ($goals as $goal): ?>
-                        <li>
-                            <p><strong>Goal:</strong> <?= htmlspecialchars($goal['goal']) ?></p>
-                            <p><strong>Status:</strong> <?= $goal['is_completed'] ? "Completed ✅" : "In Progress ⏳" ?></p>
-                            <p><strong>Reward Credits:</strong> <?= htmlspecialchars($goal['reward_credits']) ?></p>
-                            <hr>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            <?php else: ?>
-                <p>No goals found. <a href="goals-add.php">Add a new goal</a>.</p>
-            <?php endif; ?>
-        </div>
+        <h1>Your Goals</h1>
+        <?php if ($goals): ?>
+            <ul class="goals-list">
+                <?php foreach ($goals as $goal): ?>
+                    <li>
+                        <p><strong>Goal:</strong> <?= htmlspecialchars($goal['goal']) ?></p>
+                        <p><strong>Status:</strong> <?= $goal['is_completed'] ? "Completed ✅" : "In Progress ⏳" ?></p>
+                        <p><strong>Reward Credits:</strong> <?= htmlspecialchars($goal['reward_credits']) ?></p>
+                        <form method="POST">
+                            <input type="hidden" name="goal_id" value="<?= $goal['goal_id'] ?>">
+                            <button type="submit" name="action" value="complete" class="complete-btn">Mark as Completed</button>
+                            <button type="submit" name="action" value="delete" class="delete-btn">Delete Goal</button>
+                        </form>
+                        <hr>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php else: ?>
+            <p>No goals found. <a href="goals-add.php">Add a new goal</a>.</p>
+        <?php endif; ?>
 
         <div class="goals-right">
             <a href="goals-add.php"><button class="add-goal-btn">Add a Goal</button></a>
