@@ -40,7 +40,11 @@ session_start();
             <th>Number/Website</th>
         </tr>
         <tr>
-            <td>Ambulance</td>
+            <td>Campus Safety</td>
+            <td>0121 359 2922</td> <!-- https://www.aston.ac.uk/current-students/health-and-wellbeing/mental-health-wellbeing -->
+        </tr>
+        <tr>
+            <td>Local Emergency Services</td>
             <td>999</td>
         </tr>
         <tr>
@@ -52,8 +56,32 @@ session_start();
             <td><a href="https://www.nationaldahelpline.org.uk/">0808 2000 247</a></td>
         </tr>
         <tr>
-            <td>Mental Health Support</td>
+            <td>Mental Health Support (Samaritans)</td>
             <td><a href="https://www.samaritans.org/">116 123</a></td>
+        </tr>
+        <tr>
+            <td>Mental Health Support (Student Minds)</td>
+            <td><a href="https://studentspace.org.uk/support-services/text-message-support">Text 'SHOUT' To 85258</a></td>
+        </tr>
+        <tr>
+            <td>Financial Advice (MoneyHelper)</td>
+            <td>0800 138 7777</td>
+        </tr>
+        <tr>
+            <td>Citizens Advice (England Adviceline)</td>
+            <td><a href="https://www.citizensadvice.org.uk/">0800 144 8848</a></td>
+        </tr>
+        <tr>
+            <td>National Careers Service</td>
+            <td><a href="https://nationalcareers.service.gov.uk/">0800 100 900</a></td>
+        </tr>
+        <tr>
+            <td>Alcohol and Drugs (FRANK)</td>
+            <td><a href="https://www.talktofrank.com/">0300 123 6600</a></td>
+        </tr>
+        <tr>
+            <td>Learning Disabilities (Mencap)</td>
+            <td><a href="https://www.mencap.org.uk/">0808 808 1111</a></td>
         </tr>
     </table>
 </div>
