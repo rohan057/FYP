@@ -1,5 +1,16 @@
 <?php
 session_start();
+$host = 'localhost';
+$dbname = 'fyp';
+$username = 'root';
+$password = '';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password); //https://www.w3schools.com/php/php_mysql_connect.asp
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
 ?>
 
 <!DOCTYPE html>
@@ -35,26 +46,18 @@ session_start();
     <h1 class="faq-header">Frequently Asked Questions</h1>
 
     <div class="faq-container">
-        <div class="faq-item">
-            <input type="checkbox" id="faq1" class="faq-checkbox">
-            <label for="faq1" class="faq-question">What is the purpose of this platform?</label>
-            <div class="faq-answer">This platform is designed to provide resources and support for students to improve their wellbeing, balance education, and enhance mental health.</div>
-        </div>
-        <div class="faq-item">
-            <input type="checkbox" id="faq2" class="faq-checkbox">
-            <label for="faq2" class="faq-question">How can I request resources?</label>
-            <div class="faq-answer">You can request resources by navigating to the "Request Resources" page and filling out the provided questionnaire.</div>
-        </div>
-        <div class="faq-item">
-            <input type="checkbox" id="faq3" class="faq-checkbox">
-            <label for="faq3" class="faq-question">Who can access the anonymous feedback section?</label>
-            <div class="faq-answer">The anonymous feedback section is open to all students to provide their feedback while keeping their identity private.</div>
-        </div>
-        <div class="faq-item">
-            <input type="checkbox" id="faq4" class="faq-checkbox">
-            <label for="faq4" class="faq-question">Where can I find emergency hotline numbers?</label>
-            <div class="faq-answer">You can find a list of emergency hotline numbers under the "Hotline Numbers" page for quick access.</div>
-        </div>
+        <?php
+        $stmt = $pdo->query("SELECT * FROM faq");
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $faq_id = 'faq' . $row['id'];
+            echo '
+            <div class="faq-item">
+                <input type="checkbox" id="' . $faq_id . '" class="faq-checkbox">
+                <label for="' . $faq_id . '" class="faq-question">' . htmlspecialchars($row['question']) . '</label>
+                <div class="faq-answer">' . htmlspecialchars($row['answer']) . '</div>
+            </div>';
+        }
+        ?>
     </div>
 </body>
 </html>
