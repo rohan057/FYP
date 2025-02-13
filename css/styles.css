@@ -1387,3 +1387,70 @@ button:hover {
     text-align: center;
     margin-bottom: 1rem;
 }
+
+.goals-redeem-container {
+    max-width: 800px;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.goals-redeem-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.goals-redeem-credits {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.goals-redeem-message {
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.goals-redeem-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.goals-redeem-label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.goals-redeem-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.goals-redeem-button {
+    background: #940090;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.goals-redeem-button:hover {
+    background: #160032;
+}
+
+.goals-redeem-strong {
+    font-weight: bold;
+    color: #333;
+}
