@@ -92,6 +92,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p class="goals-redeem-message"><?= $message ?></p>
     <?php endif; ?>
 
+    <div class="goals-redeem-note">
+        <p><strong>Important:</strong> Any attempt to exploit or abuse the reward system will result in retrospective action. This may include the forfeiture of credits and the suspension of your account.</p>
+    </div>
+
     <form method="POST" class="goals-redeem-form">
         <label for="giftcard" class="goals-redeem-label">Select gift card:</label>
         <select name="giftcard" id="giftcard" class="goals-redeem-select" required>

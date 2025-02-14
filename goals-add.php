@@ -80,8 +80,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <label for="goal">Goal:</label><br>
         <input type="text" class="goals-add-input" name="goal" id="goal" placeholder="Enter your goal" required><br><br>
 
+        <div class="goals-add-guide">
+        <p><strong>Reward Credits Guide:</strong></p>
+        <ul>
+            <li>30 credits - Attend a workshop or complete a wellbeing activity</li>
+            <li>50 credits - Study for 2 hours</li>
+            <li>70 credits - Attend all lectures and labs for the week</li>
+            <li>100 credits - Finish a piece of coursework</li>
+            <li>150 credits - Attend a university event (e.g. careers fair)</li>
+            <li>200 credits - Complete and exam on module</li>
+        </ul>
+        <p class="small-note">Note: Reward credits must be between <strong>20</strong> and <strong>200</strong>.</p>
+        <p class="important-note"><strong>Important:</strong> Any attempt to abuse or manipulate the reward system will result in retrospective action, including the potential loss of credits or access to rewards.</p>
+        </div>
+
         <label for="reward_credits">Reward Credits:</label><br>
-        <input type="number" class="goals-add-input" name="reward_credits" id="reward_credits" min="1" placeholder="Enter reward credits" required><br><br>
+        <input type="number" class="goals-add-input" name="reward_credits" id="reward_credits" min="20" max="200" placeholder="Enter reward credits" required><br><br>
 
         <button class="goals-add-button" type="submit">Add Goal</button>
     </form>
