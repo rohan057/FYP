@@ -102,6 +102,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <option value="Amazon">Amazon</option>
             <option value="Google Play">Google Play</option>
             <option value="Spotify">Spotify</option>
+            <option value="Apple">Apple</option>
+            <option value="Currys">Currys</option>
         </select>
 
         <label for="amount" class="goals-redeem-label">Select amount to redeem:</label>
