@@ -98,7 +98,8 @@ $goals = $stmt->fetchAll();
     </nav>
 
     <div class="goals-container">
-        <h1>Your Goals</h1>
+    <div class="goals-left">
+        <h1 class="goals-header">Your Goals</h1>
         <?php if ($goals): ?>
             <ul class="goals-list">
                 <?php foreach ($goals as $goal): ?>
@@ -118,11 +119,13 @@ $goals = $stmt->fetchAll();
         <?php else: ?>
             <p>No goals found. <a href="goals-add.php">Add a new goal</a>.</p>
         <?php endif; ?>
-
-        <div class="goals-right">
-            <a href="goals-add.php"><button class="add-goal-btn">Add a Goal</button></a>
-            <a href="goals-redeem.php"><button class="redeem-rewards-btn">Redeem Rewards</button></a>
-        </div>
     </div>
+
+    <div class="goals-right">
+        <a href="goals-add.php"><button class="add-goal-btn">Add a Goal</button></a>
+        <a href="goals-redeem.php"><button class="redeem-rewards-btn">Redeem Rewards</button></a>
+    </div>
+</div>
+
 </body>
 </html>

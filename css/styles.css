@@ -647,63 +647,67 @@ button:hover {
     background-color: #160032;
 }
 
-.goals-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    gap: 10px;
-    margin-top: 50px;
+.goals-header {
+    margin-top: 100px;
 }
 
-.goals-left,
-.goals-right {
+.goals-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
 }
 
 .goals-left {
-    width: 60%;
-    text-align: center;
-    margin-top: 20px;
+    flex: 1;
 }
 
 .goals-right {
-    width: 35%;
-    text-align: center;
-}
-
-.goals-left h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 200px;
 }
 
 .goals-list {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 .goals-list li {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
-.goals-right button {
-    padding: 12px 20px;
-    font-size: 18px;
+.add-goal-btn, .redeem-rewards-btn {
+    padding: 10px 20px;
+    margin: 10px 0;
     background-color: #940090;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 5px;
-    transition: background-color 0.3s ease;
+    width: 100%;
 }
 
-.goals-right button:hover {
+.add-goal-btn:hover, .redeem-rewards-btn:hover {
+    background-color: #160032;
+}
+
+.complete-btn, .delete-btn {
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #940090;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+}
+
+.complete-btn:hover, .delete-btn:hover {
     background-color: #160032;
 }
 
