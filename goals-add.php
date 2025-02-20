@@ -15,11 +15,28 @@ try {
 
 $message = '';
 
+$goal_rewards = [
+    "Attend a workshop or complete a wellbeing activity" => 30,
+    "Practice mindfulness or meditation for 20 minutes" => 30,
+    "Go for a 30-minute walk or do some physical exercise" => 40,
+    "Stay hydrated (drink at least 2L of water in a day)" => 40,
+    "Study for 2 hours" => 50,
+    "Participate in a peer support session or group activity" => 50,
+    "Limit social media use to 1 hour or less in a day" => 50,
+    "Try a new healthy meal or cook at home" => 50,
+    "Get 7-9 hours of sleep consistently for a week" => 60,
+    "Attend all lectures and labs for the week" => 70,
+    "Finish a piece of coursework" => 100,
+    "Volunteer for a student wellbeing initiative" => 100,
+    "Attend a university event (e.g. careers fair)" => 150,
+    "Complete an exam on a module" => 200
+];
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $goal = isset($_POST['goal']) ? trim($_POST['goal']) : '';
-    $reward_credits = isset($_POST['reward_credits']) ? (int) $_POST['reward_credits'] : 0;
 
-    if (!empty($goal) && $reward_credits > 0) {
+    if (!empty($goal) && isset($goal_rewards[$goal])) {
+        $reward_credits = $goal_rewards[$goal];
         $user_id = $_SESSION['user_id'];
 
         $stmt = $pdo->prepare("INSERT INTO goals (user_id, goal, is_completed, reward_credits) VALUES (?, ?, 0, ?)");
@@ -33,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $message = "<p class='goals-add-error'>Error: " . $stmt->errorInfo()[2] . "</p>";
         }
     } else {
-        $message = "<p class='goals-add-error'>Please enter a valid goal and reward credits.</p>";
+        $message = "<p class='goals-add-error'>Please select a valid goal.</p>";
     }
 }
 ?>
@@ -78,24 +95,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <form class="goals-add-form" method="POST">
         <label for="goal">Goal:</label><br>
-        <input type="text" class="goals-add-input" name="goal" id="goal" placeholder="Enter your goal" required><br><br>
-
-        <div class="goals-add-guide">
-        <p><strong>Reward Credits Guide:</strong></p>
-        <ul>
-            <li>30 credits - Attend a workshop or complete a wellbeing activity</li>
-            <li>50 credits - Study for 2 hours</li>
-            <li>70 credits - Attend all lectures and labs for the week</li>
-            <li>100 credits - Finish a piece of coursework</li>
-            <li>150 credits - Attend a university event (e.g. careers fair)</li>
-            <li>200 credits - Complete and exam on module</li>
-        </ul>
-        <p class="small-note">Note: Reward credits must be between <strong>20</strong> and <strong>200</strong>.</p>
-        <p class="important-note"><strong>Important:</strong> Any attempt to abuse or manipulate the reward system will result in retrospective action, including the potential loss of credits or access to rewards.</p>
-        </div>
-
-        <label for="reward_credits">Reward Credits:</label><br>
-        <input type="number" class="goals-add-input" name="reward_credits" id="reward_credits" min="20" max="200" placeholder="Enter reward credits" required><br><br>
+        <select class="goals-add-input" name="goal" id="goal" required>
+            <option value="" disabled selected>Select a goal</option>
+            <?php foreach ($goal_rewards as $goal => $credits): ?>
+                <option value="<?php echo htmlspecialchars($goal); ?>"><?php echo htmlspecialchars($goal); ?></option>
+            <?php endforeach; ?>
+        </select><br><br>
 
         <button class="goals-add-button" type="submit">Add Goal</button>
     </form>
