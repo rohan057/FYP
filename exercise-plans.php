@@ -34,10 +34,26 @@ session_start();
 
     <main>
         <h1 class="exercise-title">Exercise Plans</h1>
-        
+
+        <h3>Select one or more options to filter the exercise plans.</h3>
+
+        <div id="filters">
+            <label><input type="checkbox" value="beginner"> Beginner</label>
+            <label><input type="checkbox" value="intermediate"> Intermediate</label>
+            <label><input type="checkbox" value="advanced"> Advanced</label>
+            <label><input type="checkbox" value="walking"> Walking</label>
+            <label><input type="checkbox" value="strength"> Strength</label>
+            <label><input type="checkbox" value="cardio"> Cardio</label>
+            <label><input type="checkbox" value="core"> Core</label>
+            <label><input type="checkbox" value="full-body"> Full Body</label>
+            <label><input type="checkbox" value="low-intensity"> Low Intensity</label>
+            <label><input type="checkbox" value="moderate-intensity"> Moderate Intensity</label>
+            <label><input type="checkbox" value="high-intensity"> High Intensity</label>
+        </div>
+
         <section id="easy-plans">
             <h2>Beginner Plans</h2>
-            <div class="plan">
+            <div class="plan" data-tags="beginner, walking, low-intensity">
                 <h3>Plan 1: Walking & Stretching</h3> <!-- https://www.lowa.co.uk/blogs/news/key-stretching-exercises-walkers?srsltid=AfmBOoqg5YJB4nuYukvjywdlf2aWa8QPsYog69Cw9mE1532F2a4egfMP -->
                 <ul>
                     <li>Walk for 30 minutes</li>
@@ -50,7 +66,7 @@ session_start();
                     <li>Repeat daily</li>
                 </ul>
             </div>
-            <div class="plan">
+            <div class="plan" data-tags="beginner, stretching, low-intensity">
                 <h3>Plan 2: Gentle Yoga (12 minutes)</h3> <!-- https://www.bupa.co.uk/newsroom/ourviews/rise-and-shine-its-yoga-time -->
                 <ul>
                     <li>Prayer pose</li>
@@ -68,7 +84,7 @@ session_start();
                     <li>Savasana</li>
                 </ul>
             </div>
-            <div class="plan">
+            <div class="plan" data-tags="beginner, strength, moderate-intensity">
                 <h3>Plan 3: Basic Bodyweight Exercises (3 Circuits)</h3> <!-- https://www.nerdfitness.com/blog/beginner-body-weight-workout-burn-fat-build-muscle/ -->
                 <ul>
                     <li>20 bodyweight squats</li>
@@ -84,7 +100,7 @@ session_start();
 
         <section id="medium-plans">
             <h2>Intermediate Plans</h2>
-            <div class="plan">
+            <div class="plan" data-tags="intermediate, strength, high-intensity">
                 <h3>Plan 1: Advanced Bodyweight Exercises (3 circuits)</h3> <!-- https://www.nerdfitness.com/blog/circuit-training-build-some-muscles-burn-some-fat/ -->
                 <ul>
                     <li>10 one legged squats (10 each side)</li>
@@ -98,7 +114,7 @@ session_start();
                     <li>30 second plank</li>
                 </ul>
             </div>
-            <div class="plan">
+            <div class="plan" data-tags="intermediate, cardio, high-intensity">
                 <h3>Plan 2: Cardio (1-3 Cicuits)</h3> <!-- https://www.onepeloton.com/blog/cardio-at-home/ -->
                 <ul>
                     <li>Jumping jacks (60 seconds)</li>
@@ -112,7 +128,7 @@ session_start();
                     <li>High knees (60 seconds)</li>
                 </ul>
             </div>
-            <div class="plan">
+            <div class="plan" data-tags="intermediate, strength, high-intensity">
                 <h3>Plan 3: Strength (3-4 Circuits)</h3> <!-- https://www.menshealth.com/uk/building-muscle/a756325/10-best-bodyweight-exercises-for-men/ -->
                 <ul>
                     <li>20 push-ups (3 sets)</li>
@@ -127,7 +143,7 @@ session_start();
                     <li>12-15 glute kickbacks (3 sets)</li>
                 </ul>
             </div>
-            <div class="plan">
+            <div class="plan" data-tags="intermediate, core, high-intensity">
                 <h3>Plan 4: Core & Abs (15 minutes)</h3> <!-- https://www.myprotein.com/thezone/training/best-ab-exercises-you-can-do-without-equipment/ -->
                 <ul>
                     <li>10-20 crunches (3 sets)</li>
@@ -145,7 +161,7 @@ session_start();
 
         <section id="hard-plans">
             <h2>Advanced Plans</h2>
-            <div class="plan">
+            <div class="plan" data-tags="advanced, full-body, high-intensity">
                 <h3>Plan 1: Full Body Workout (15 minutes)</h3> <!-- https://www.youtube.com/watch?v=gnTzk1yUHB4 -->
                 <ul>
                     <li>15 seconds rest between exercises</li>
@@ -166,7 +182,7 @@ session_start();
                     <li>45 seconds russian twists</li>
                 </ul>
             </div>
-            <div class="plan">
+            <div class="plan" data-tags="advanced, full body, cardio, high-intensity">
                 <h3>Plan 2: Full Body Cardio Workout (20 minutes)</h3> <!-- https://www.youtube.com/watch?v=79cx5vmf3Qg -->
                 <ul>
                     <li>45 seconds high knee taps</li>
@@ -188,7 +204,7 @@ session_start();
                     <li>45 seconds seated in and outs</li>
                 </ul>
             </div>
-            <div class="plan">
+            <div class="plan" data-tags="advanced, core, high-intensity">
                 <h3>Plan 3: Abs Workout (30 minutes)</h3> <!-- https://www.youtube.com/watch?v=P1mInEK7BEU -->
                 <ul>
                     <li>40 seconds high knee taps</li>
@@ -225,5 +241,27 @@ session_start();
             </div>
         </section>
     </main>
+
+    <script>
+    document.querySelectorAll("#filters input").forEach(checkbox => {
+        checkbox.addEventListener("change", function () {
+            let selectedTags = Array.from(document.querySelectorAll("#filters input:checked"))
+                                    .map(input => input.value);
+
+            let exercisePlans = document.querySelectorAll(".plan");
+            exercisePlans.forEach(exercisePlan => {
+                let exercisePlanTags = exercisePlan.getAttribute("data-tags").split(", ").map(tag => tag.trim());
+
+                let matches = selectedTags.every(tag => exercisePlanTags.includes(tag));
+
+                if (matches) {
+                    exercisePlan.style.display = "block";
+                } else {
+                    exercisePlan.style.display = "none";
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>

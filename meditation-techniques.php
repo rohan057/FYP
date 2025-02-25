@@ -34,57 +34,102 @@ session_start();
 
     <h1 class="meditation-title">Meditation Techniques</h1>
 
+    <h3>Select one or more options to filter the meditation techniques.</h3>
+
+    <div id="filters">
+        <label><input type="checkbox" value="loving-kindness"> Loving-Kindness</label>
+        <label><input type="checkbox" value="progressive-muscle-relaxation"> Progressive Muscle Relaxation</label>
+        <label><input type="checkbox" value="mindfulness-stress-reduction"> Mindfulness Stress Reduction</label>
+        <label><input type="checkbox" value="visualisation"> Visualisation</label>
+        <label><input type="checkbox" value="mindfulness"> Mindfulness</label>
+        <label><input type="checkbox" value="breathing"> Breathing</label>
+        <label><input type="checkbox" value="om-mantra"> OM Mantra</label>
+        <label><input type="checkbox" value="guided"> Guided</label>
+        <label><input type="checkbox" value="body-scan"> Body Scan</label>
+        <label><input type="checkbox" value="walking"> Walking</label>
+        <label><input type="checkbox" value="zen"> ZEN</label>
+        <label><input type="checkbox" value="vipassana"> Vipassana</label>
+        <label><input type="checkbox" value="short"> Short (less than 10 mins)</label>
+        <label><input type="checkbox" value="medium"> Medium (10-20 mins)</label>
+        <label><input type="checkbox" value="long"> Long (20+ mins)</label>
+        <label><input type="checkbox" value="stress-relief"> Stress Relief</label>
+        <label><input type="checkbox" value="relaxation"> Relaxation</label>
+        <label><input type="checkbox" value="body-awareness"> Body Awareness</label>
+    </div>
+
     <div class="techniques-container">
         <div class="technique-grid">
-            <div class="technique-item">
+            <div class="technique-item" data-tags="loving-kindness, guided, stress-relief, relaxation, mindfulness, medium">
                 <h3>Loving-Kindness Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/-d_AA9H4z9U" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=-d_AA9H4z9U -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="progressive-muscle-relaxation, relaxation, guided, stress-relief, medium">
                 <h3>Progressive Muscle Relaxation</h3>
                 <iframe src="https://www.youtube.com/embed/_1h-zizAGsc" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=_1h-zizAGsc -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="mindfulness-stress-reduction, mindfulness, relaxation, stress-relief, guided, medium">
                 <h3>Mindfulness Stress Reduction</h3>
                 <iframe src="https://www.youtube.com/embed/507zwibbfRs" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=507zwibbfRs -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="visualisation, mindfulness, relaxation, stress-relief, guided, medium">
                 <h3>Visualisation Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/NVPrxcR_RZI" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=NVPrxcR_RZI -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="mindfulness, Meditation, relaxation, stress-relief, guided, body-awareness, medium">
                 <h3>Mindfulness Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/ZToicYcHIOU" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=ZToicYcHIOU -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="breathing, meditation, relaxation, stress-relief, mindfulness, guided, short">
                 <h3>Breathing Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/YFSc7Ck0Ao0" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=YFSc7Ck0Ao0 -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="om-mantra, meditation, relaxation, mindfulness, guided, medium">
                 <h3>OM Mantra Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/vH11undyI2o" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=vH11undyI2o -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="guided, meditation, relaxation, mindfulness, stress-relief, visualisation, medium">
                 <h3>Guided Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/uTN29kj7e-w" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=uTN29kj7e-w -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="body-scan, mindfulness, relaxation, meditation, stress-relief, medium">
                 <h3>Body Scan Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/uqtIqCKjkuc" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=uqtIqCKjkuc -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="walking, mindfulness, meditation, stress-relief, relaxation, long">
                 <h3>Walking Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/maCdzhtGgGU" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=maCdzhtGgGU -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="zen, mindfulness, meditation, relaxation, stress-relief, medium">
                 <h3>ZEN Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/aTIV9djESbY" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=aTIV9djESbY -->
             </div>
-            <div class="technique-item">
+            <div class="technique-item" data-tags="vipassana, mindfulness, meditation, relaxation, stress-relief, medium">
                 <h3>Vipassana Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/PvAEG5muUnU" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=PvAEG5muUnU -->
             </div>
         </div>
     </div>
+
+    <script>
+    document.querySelectorAll("#filters input").forEach(checkbox => {
+        checkbox.addEventListener("change", function () {
+            let selectedTags = Array.from(document.querySelectorAll("#filters input:checked"))
+                                    .map(input => input.value);
+
+            let meditationTechniques = document.querySelectorAll(".technique-item");
+            meditationTechniques.forEach(meditationTechnique => {
+                let meditationTechniqueTags = meditationTechnique.getAttribute("data-tags").split(", ").map(tag => tag.trim());
+
+                let matches = selectedTags.every(tag => meditationTechniqueTags.includes(tag));
+
+                if (matches) {
+                    meditationTechnique.style.display = "block";
+                } else {
+                    meditationTechnique.style.display = "none";
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
