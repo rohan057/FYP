@@ -35,7 +35,7 @@ session_start();
 
     <h1 class="exercisevideo-title">Exercise Videos</h1>
 
-    <h3>Select one or more options to filter the exercise videos.</h3>
+    <h3 class="filter-header">Select one or more options to filter the exercise videos.</h3>
 
     <div id="filters">
         <label><input type="checkbox" value="beginner"> Beginner</label>

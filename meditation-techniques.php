@@ -34,7 +34,7 @@ session_start();
 
     <h1 class="meditation-title">Meditation Techniques</h1>
 
-    <h3>Select one or more options to filter the meditation techniques.</h3>
+    <h3 class="filter-header">Select one or more options to filter the meditation techniques.</h3>
 
     <div id="filters">
         <label><input type="checkbox" value="loving-kindness"> Loving-Kindness</label>
