@@ -55,6 +55,10 @@ session_start();
         <label><input type="checkbox" value="stress-relief"> Stress Relief</label>
         <label><input type="checkbox" value="relaxation"> Relaxation</label>
         <label><input type="checkbox" value="body-awareness"> Body Awareness</label>
+        <label><input type="checkbox" value="depression"> Depression</label>
+        <label><input type="checkbox" value="anxiety"> Anxiety</label>
+        <label><input type="checkbox" value="fatigue"> Fatigue</label>
+        <label><input type="checkbox" value="burnout"> Burnout</label>
     </div>
 
     <div class="techniques-container">
@@ -106,6 +110,38 @@ session_start();
             <div class="technique-item" data-tags="vipassana, mindfulness, meditation, relaxation, stress-relief, medium">
                 <h3>Vipassana Meditation</h3>
                 <iframe src="https://www.youtube.com/embed/PvAEG5muUnU" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=PvAEG5muUnU -->
+            </div>
+            <div class="technique-item" data-tags="medium, depression">
+                <h3>Meditation For Depression</h3>
+                <iframe src="https://www.youtube.com/embed/xRxT9cOKiM8" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=xRxT9cOKiM8 -->
+            </div>
+            <div class="technique-item" data-tags="long, guided, depression, mindfulness">
+                <h3>Meditation For Depression</h3>
+                <iframe src="https://www.youtube.com/embed/O3Ku-cpdSJM" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=O3Ku-cpdSJM -->
+            </div>
+            <div class="technique-item" data-tags="anxiety, depression, medium">
+                <h3>Meditation For Anxiety and Depression</h3>
+                <iframe src="https://www.youtube.com/embed/6wl4j4gd2WI" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=6wl4j4gd2WI -->
+            </div>
+            <div class="technique-item" data-tags="depression, medium, guided">
+                <h3>Meditation For Depression</h3>
+                <iframe src="https://www.youtube.com/embed/d3xTelxky9A" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=d3xTelxky9A -->
+            </div>
+            <div class="technique-item" data-tags="stress-relief, anxiety, medium, guided">
+                <h3>Meditation For Stress & Anxiety</h3>
+                <iframe src="https://www.youtube.com/embed/tuPW7oOudVc" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=tuPW7oOudVc -->
+            </div>
+            <div class="technique-item" data-tags="fatigue, long">
+                <h3>Meditation For Fatigue</h3>
+                <iframe src="https://www.youtube.com/embed/JVdsxQhlAw0" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=JVdsxQhlAw0 -->
+            </div>
+            <div class="technique-item" data-tags="stress-relief, medium">
+                <h3>Meditation For Stress</h3>
+                <iframe src="https://www.youtube.com/embed/z6X5oEIg6Ak" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=z6X5oEIg6Ak -->
+            </div>
+            <div class="technique-item" data-tags="burnout, medium, guided">
+                <h3>Meditation For Burnout</h3>
+                <iframe src="https://www.youtube.com/embed/BALTOxc0xJY" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=BALTOxc0xJY -->
             </div>
         </div>
     </div>

@@ -58,6 +58,9 @@ session_start();
         <label><input type="checkbox" value="moderate-intensity"> Moderate Intensity</label>
         <label><input type="checkbox" value="high-intensity"> High Intensity</label>
         <label><input type="checkbox" value="HIIT"> HIIT</label>
+        <label><input type="checkbox" value="stress"> Stress</label>
+        <label><input type="checkbox" value="anxiety"> Anxiety</label>
+        <label><input type="checkbox" value="depression"> Depression</label>
     </div>
 
     <div class="video-container">
@@ -141,6 +144,38 @@ session_start();
             <div class="video-item" data-tags="legs, strength">
                 <h3>Lower Body Workout</h3>
                 <iframe src="https://www.youtube.com/embed/6atz9eroPBs" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=6atz9eroPBs -->
+            </div>
+            <div class="video-item" data-tags="depression">
+                <h3>Yoga For Depression</h3>
+                <iframe src="https://www.youtube.com/embed/Sxddnugwu-8" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=Sxddnugwu-8 -->
+            </div>
+            <div class="video-item" data-tags="stress">
+                <h3>Stress Relief Exercises</h3>
+                <iframe src="https://www.youtube.com/embed/tYddPTEfS_8" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=tYddPTEfS_8 -->
+            </div>
+            <div class="video-item" data-tags="anxiety">
+                <h3>Yoga For Anxiety</h3>
+                <iframe src="https://www.youtube.com/embed/bJJWArRfKa0" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=bJJWArRfKa0 -->
+            </div>
+            <div class="video-item" data-tags="anxiety">
+                <h3>Anxiety Release Workout</h3>
+                <iframe src="https://www.youtube.com/embed/0X6qRWrnIEE" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=0X6qRWrnIEE -->
+            </div>
+            <div class="video-item" data-tags="anxiety, stress">
+                <h3>Stretches For Anxiety & Stress</h3>
+                <iframe src="https://www.youtube.com/embed/yqeirBfn2j4" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=yqeirBfn2j4 -->
+            </div>
+            <div class="video-item" data-tags="anxiety">
+                <h3>Yoga For Panic and Anxiety</h3>
+                <iframe src="https://www.youtube.com/embed/8Lg4EzektCw" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=8Lg4EzektCw -->
+            </div>
+            <div class="video-item" data-tags="stress, anxiety">
+                <h3>Workout For Stress and Anxiety</h3>
+                <iframe src="https://www.youtube.com/embed/ah4PAK18Rtg" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=ah4PAK18Rtg -->
+            </div>
+            <div class="video-item" data-tags="anxiety, stress">
+                <h3>Yoga For Anxiety and Stress</h3>
+                <iframe src="https://www.youtube.com/embed/hJbRpHZr_d0" frameborder="0" allowfullscreen></iframe> <!-- https://www.youtube.com/watch?v=hJbRpHZr_d0 -->
             </div>
         </div>
     </div>
