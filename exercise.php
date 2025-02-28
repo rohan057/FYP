@@ -16,7 +16,7 @@ session_start();
             <li><a href="index.php">Home</a></li>
             <li><a href="year-resources.php">Student Resources</a></li>
             <li><a href="exercise.php">Exercise</a></li>
-            <li><a href="nutrition.php">Nutrition</a></li>
+            <li><a href="nutrition.php">Recipes</a></li>
             <li><a href="meditation-mindfulness.php">Meditation and Mindfulness</a></li>
             <li><a href="funding.php">Funding</a></li>
             <li><a href="questionnaire.php">Request Resources</a></li>
@@ -44,5 +44,18 @@ session_start();
             <a href="exercise-videos.php">Watch Videos</a>
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.createElement('div');
+        hamburger.className = 'hamburger';
+        hamburger.innerHTML = '☰';
+        document.querySelector('nav').insertBefore(hamburger, document.querySelector('nav ul'));
+
+        hamburger.addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    });
+</script>
 </body>
 </html>

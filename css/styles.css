@@ -1557,3 +1557,116 @@ button:hover {
     text-align: left;
     padding-left: 160px;
 }
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .container, .request-resources-page .container, .feedback-page .form-container, 
+    .funding-box, .year-box, .nutrition-box, .mindfulness-box, .exercise-box {
+        max-width: 100%;
+        width: 90%;
+        padding: 10px;
+        margin-top: 70px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    nav {
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .hamburger {
+        color: white;
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        color: white;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .video-grid, .meal-container, .technique-grid, .articles-grid, .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    button, input, select {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-grid, .meal-container, .technique-grid, .articles-grid, .tips-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    .exercise-box {
+        width: 100%;
+    }
+
+    .hero-image {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}

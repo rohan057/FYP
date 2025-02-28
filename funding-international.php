@@ -16,7 +16,7 @@ session_start();
             <li><a href="index.php">Home</a></li>
             <li><a href="year-resources.php">Student Resources</a></li>
             <li><a href="exercise.php">Exercise</a></li>
-            <li><a href="nutrition.php">Nutrition</a></li>
+            <li><a href="nutrition.php">Recipes</a></li>
             <li><a href="meditation-mindfulness.php">Meditation and Mindfulness</a></li>
             <li><a href="funding.php">Funding</a></li>
             <li><a href="questionnaire.php">Request Resources</a></li>
@@ -134,5 +134,18 @@ session_start();
             <div class="funding-answer">We aim to attract the brightest and best students to our practical, industry relevant degrees. If you achieve the equivalent of a UK first class degree, you will automatically receive a £2,000 scholarship. If you achieve the equivalent of a UK upper second class (2:1)  degree, you will automatically receive a £1,000 scholarship. There is no need to submit a separate application, your eligibility will be assessed by our admissions team when your application is reviewed.</div>
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.createElement('div');
+        hamburger.className = 'hamburger';
+        hamburger.innerHTML = '☰';
+        document.querySelector('nav').insertBefore(hamburger, document.querySelector('nav ul'));
+
+        hamburger.addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    });
+</script>
 </body>
 </html>

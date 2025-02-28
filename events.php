@@ -16,7 +16,7 @@ session_start();
             <li><a href="index.php">Home</a></li>
             <li><a href="year-resources.php">Student Resources</a></li>
             <li><a href="exercise.php">Exercise</a></li>
-            <li><a href="nutrition.php">Nutrition</a></li>
+            <li><a href="nutrition.php">Recipes</a></li>
             <li><a href="meditation-mindfulness.php">Meditation and Mindfulness</a></li>
             <li><a href="funding.php">Funding</a></li>
             <li><a href="questionnaire.php">Request Resources</a></li>
@@ -40,5 +40,18 @@ session_start();
         <iframe src="https://calendar.google.com/calendar/embed?src=ca48b22c73b05ce41f1ee524e29adbd4e980bfcee247ea20e52a8c7aaf14171f%40group.calendar.google.com&ctz=Europe%2FLondon"
             style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.createElement('div');
+        hamburger.className = 'hamburger';
+        hamburger.innerHTML = '☰';
+        document.querySelector('nav').insertBefore(hamburger, document.querySelector('nav ul'));
+
+        hamburger.addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    });
+</script>
 </body>
 </html>
