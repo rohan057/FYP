@@ -32,7 +32,7 @@ class CounsellingAppointmentTest extends TestCase
             ]
         ];
 
-        // Simulate POST request (PHP's $_POST)
+        // Simulate POST request
         $_POST = $formData;
 
         // Prepare mock return values for the statement methods
