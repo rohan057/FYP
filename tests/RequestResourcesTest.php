@@ -18,7 +18,7 @@ class RequestResourcesTest extends TestCase
             'additional_info' => 'No additional information'
         ];
 
-        // Here you test that the data was processed as expected
+        // Test that the data was processed as expected
         $this->assertEquals('John Doe', $_POST['name']);
         $this->assertEquals('john.doe@example.com', $_POST['contact_info']);
         $this->assertEquals('Improve academic performance', $_POST['primary_goal']);

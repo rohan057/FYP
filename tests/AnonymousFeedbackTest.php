@@ -10,16 +10,16 @@ class AnonymousFeedbackTest extends TestCase
             'feedback' => 'This is a test feedback for improvement.'
         ];
 
-        // Here you test that the data was processed as expected
+        // Test that the data was processed as expected
         $this->assertEquals('This is a test feedback for improvement.', $_POST['feedback']);
     }
 
     public function testFeedbackSubmission()
     {
-        // Simulate form submission (PHP backend part)
+        // Simulate form submission
         $_POST['feedback'] = 'Test feedback submission for anonymous feedback';
 
-        // Simulate a simple submission handling
+        // Simulate submission handling
         $response = false;
 
         if (isset($_POST['feedback']) && !empty($_POST['feedback'])) {

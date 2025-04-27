@@ -48,7 +48,7 @@ class AddGoalTest extends TestCase
                      ->onlyMethods(['bindParam', 'execute', 'fetch'])
                      ->getMock();
 
-        // Expect bindParam to be called 3 times (once for each parameter)
+        // Expect bindParam to be called 3 times
         $stmt->expects($this->exactly(3))
              ->method('bindParam')
              ->willReturn(true);

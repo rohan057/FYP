@@ -23,14 +23,14 @@ class AddJournalEntryTest extends TestCase
     // Test the journal entry functionality
     public function testAddJournalEntry()
     {
-        // Simulate form data (journal entry)
+        // Simulate form data
         $journal_entry = 'This is a test journal entry';
 
         // Mock the behavior of the prepare method to return the mocked statement
         $this->pdo->method('prepare')
             ->willReturn($this->stmt);
 
-        // Mock the behavior of the execute method to return true (successful execution)
+        // Mock the behavior of the execute method to return true
         $this->stmt->method('execute')
             ->willReturn(true);
 

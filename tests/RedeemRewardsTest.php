@@ -31,7 +31,7 @@ class RedeemRewardsTest extends TestCase
         $_POST['giftcard'] = 'Amazon';
         $_POST['amount'] = 1000; // Redeem £10
 
-        // Expectation: the credits should be updated by subtracting the redemption amount
+        // The credits should be updated by subtracting the redemption amount
         $updatedCredits = $this->user_credits - 1000;
 
         // Mocking the update query for user credits
@@ -48,13 +48,13 @@ class RedeemRewardsTest extends TestCase
                               ->with([$this->user_id, 1000, 'Amazon'])
                               ->willReturn(true);
 
-        // Now, simulate a form submission and check the result
+        // Simulate a form submission and check the result
         $resultMessage = '';
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Begin transaction
             $this->pdo->beginTransaction();
             
-            // Execute the update query and insert query (simulated above)
+            // Execute the update query and insert query
             $stmtUpdateCredits->execute([1000, $this->user_id]);
             $stmtInsertRedemption->execute([$this->user_id, 1000, $_POST['giftcard']]);
             
